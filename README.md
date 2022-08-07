@@ -71,11 +71,11 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ### Ideas for this site 
 
--Optimize it for all screen sizes
--Make it accessible (colors, labels, alts, semantic html)
--Translate into another language (russian)
--Have a different color mode
--Have some statistics counter (amount of visits, from where, etc)
+-Optimize it for all screen sizes<br/>
+-Make it accessible (colors, labels, alts, semantic html)<br/>
+-Translate into another language (russian)<br/>
+-Have a different color mode<br/>
+-Have some statistics counter (amount of visits, from where, etc)<br/>
 
 ### Design
 
