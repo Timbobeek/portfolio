@@ -69,3 +69,30 @@
   left: 18rem;
   bottom: 20rem;
 }
+
+/* laptop view */
+
+@media (max-width: 1000px) {
+  /* main content needs to be adjusted */
+  body {
+    background-color: lightblue;
+  }
+}
+
+/* tablet view */
+
+@media (max-width: 768px) {
+  /* everything needs to be adjusted */
+  body {
+    background-color: green;
+  }
+}
+
+/* phone view */
+
+@media (max-width: 480px) {
+  /* everything needs to be adjusted */
+  body {
+    background-color: pink;
+  }
+}

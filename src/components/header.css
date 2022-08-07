@@ -53,7 +53,7 @@ header {
    }
    
    .row {
-     width: 700px;
+     width: 550px;
      position: relative;
      z-index: 2;
      color: black;
@@ -80,7 +80,8 @@ header {
      .left { 
         width: 350px; 
         padding: 15px 20px; 
-        text-align: right;
+        align-items: center;
+      
         transform-style: preserve-3d;
         transform: rotateY(0deg);       
      }
