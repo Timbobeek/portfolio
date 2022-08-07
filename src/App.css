@@ -1,0 +1,71 @@
+
+.homePage{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.welcome{
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  font-size: 3rem;
+  font-style: italic;
+}
+
+.welcome .hiddenMessage {
+  display: none;
+}
+
+.welcome:hover .message {
+  display: none;
+}
+
+.welcome:hover .hiddenMessage {
+  display: inline;
+}
+
+.homeImages{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.homeText{
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
+  color: #A64B2A;
+  flex-wrap: wrap;
+}
+
+.aboutMeText{
+  display: flex; 
+  justify-content: center;
+  text-align: center;
+  background-color: white;
+  width: 20rem;
+  padding: 20px;
+  position: absolute;
+  z-index: 3;
+  border-radius: 10px;
+}
+
+.ProfilePicture1{
+  width: 25rem;
+  border-radius: 10px;
+  position: relative;
+  z-index: 2;
+  right: 18rem;
+  top: 20rem;
+}
+
+.ProfilePicture2{
+  width: 25rem;
+  border-radius: 10px;
+  position:relative;
+  z-index: 2;
+  left: 18rem;
+  bottom: 20rem;
+}
