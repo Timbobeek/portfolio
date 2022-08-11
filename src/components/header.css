@@ -8,7 +8,7 @@ header {
 }
 
 .header-left{
-  width: 300px;
+  width: 400px;
 }
 
 .header-left a {
@@ -44,7 +44,7 @@ header {
 #pillar {
      /* display: block; */
      /* margin: 100px auto; */
-     margin-left: 30px;
+     margin-left: 130px;
      width: 100px; 
      transform: translateX(-130px); 
      perspective: 1900px;

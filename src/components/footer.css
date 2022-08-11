@@ -1,7 +1,7 @@
 .footer-left{
     display: flex;
     /* justify-content: space-between; */
-    width: 300px;
+    width: 400px;
 }
 .git{
     margin-right: 5px;

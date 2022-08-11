@@ -11,7 +11,7 @@ const Header = () => {
               <div class="row">
                 <div class="wrap">
                   <div class="left">Timofey Goloshchapov</div>
-                  <div class="right">have fun pronouncing this</div>  
+                  <div class="right">have fun pronouncing my name 😁😁😁😁</div>  
                 </div>
               </div>
             </div>
