@@ -2,9 +2,13 @@ header {
     height: 21px;
     padding: 20px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     background-color: #EDDFB3;
+}
+
+.header-left{
+  width: 300px;
 }
 
 .header-left a {
@@ -38,9 +42,10 @@ header {
 
 
 #pillar {
-     display: block;
-     margin: 100px auto;
-     width: 300px; 
+     /* display: block; */
+     /* margin: 100px auto; */
+     margin-left: 30px;
+     width: 100px; 
      transform: translateX(-130px); 
      perspective: 1900px;
    }
@@ -53,7 +58,7 @@ header {
    }
    
    .row {
-     width: 550px;
+     width: 400px;
      position: relative;
      z-index: 2;
      color: black;
@@ -78,20 +83,18 @@ header {
      }
    
      .left { 
-        width: 350px; 
-        padding: 15px 20px; 
-        align-items: center;
-      
+        width: 350px;
+        margin-top: 10px;
+        align-items: center;      
         transform-style: preserve-3d;
         transform: rotateY(0deg);       
      }
 
      .right { 
-        width: 350px; 
-        padding: 15px 20px;
-     text-align: left;
-       transform: rotateY(90deg);
-     transform-origin: left center;
-       transform-style: preserve-3d;
+        width: 350px;
+        text-align: left;
+        transform: rotateY(90deg);
+        transform-origin: left center;
+        transform-style: preserve-3d;
         backface-visibility: hidden;
      }
