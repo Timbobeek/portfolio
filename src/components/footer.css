@@ -1,9 +1,14 @@
 .footer-left{
     display: flex;
-    /* justify-content: space-between; */
     width: 400px;
 }
 .git{
     margin-right: 5px;
+}
+
+@media (max-width: 1000px){
+    .footer-left{
+        width:300px;
+    }
 }
 

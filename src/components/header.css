@@ -14,7 +14,6 @@ header {
 .header-left a {
     text-decoration: none;
     color: inherit;
-    /* margin-right: 10px; */
 }
 
 .menuOption{
@@ -23,7 +22,6 @@ header {
 
 .headerANDfooter-right {
     display: flex;
-    /* justify-content: flex-end; */
     align-items: center;
 }
 
@@ -42,8 +40,6 @@ header {
 
 
 #pillar {
-     /* display: block; */
-     /* margin: 100px auto; */
      margin-left: 130px;
      width: 100px; 
      transform: translateX(-130px); 
@@ -97,4 +93,29 @@ header {
         transform-origin: left center;
         transform-style: preserve-3d;
         backface-visibility: hidden;
+     }
+
+     @media (max-width: 1000px) {
+    
+    .header-left{
+      width: 300px;
+    }
+    
+    .menuOption{
+        width: 95px;
+    }
+    
+    .row {
+      width: 200px;
+      }
+    
+      .left {
+         margin-bottom: 12px;      
+      }
+ 
+      .right { 
+         margin-top: 16px;
+         font-size: 9px;
+      }
+    
      }
