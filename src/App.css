@@ -77,6 +77,44 @@
   body {
     background-color: lightblue;
   }
+  .homeText{
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+    color: #A64B2A;
+    flex-wrap: wrap;
+  }
+  
+  .aboutMeText{
+    display: flex; 
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+    width: 15rem;
+    padding: 20px;
+    position: absolute;
+    z-index: 3;
+    border-radius: 10px;
+    margin-top: 16rem;
+  }
+  
+  .ProfilePicture1{
+    width: 18rem;
+    border-radius: 10px;
+    position: relative;
+    z-index: 2;
+    right: 14rem;
+    top: 25rem;
+  }
+  
+  .ProfilePicture2{
+    width: 18rem;
+    border-radius: 10px;
+    position:relative;
+    z-index: 2;
+    left: 14rem;
+    bottom: 14rem;
+  }
 }
 
 /* tablet view */
