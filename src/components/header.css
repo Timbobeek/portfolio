@@ -95,7 +95,9 @@ header {
         backface-visibility: hidden;
      }
 
-     @media (max-width: 1000px) {
+/* ------------------------------------------laptop view------------------------------------------- */
+     
+@media (max-width: 1000px) {
     
     .header-left{
       width: 300px;
@@ -120,6 +122,26 @@ header {
     
      }
 
-     @media (max-width: 768px) {
+/* ------------------------------------------tablet view------------------------------------------- */
 
-    }
+@media (max-width: 768px) {
+    
+  header {
+    height: 40px;
+    flex-direction: column;
+  }
+
+  .header-left{
+    width: 400px;
+  }
+
+  .left{
+    justify-content: center;
+  }
+
+  .row{
+    width: 400px;
+    margin-left: 100%;
+  }
+
+  }
