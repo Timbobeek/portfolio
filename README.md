@@ -77,6 +77,12 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 -Have a different color mode
 -Have some statistics counter (amount of visits, from where, etc)
 
+### Next things to do
+
+-Read on min-width vs max-width (looks bad when I check on specific devices)
+-Redo footer
+-Consider redoing the header hover for tablets and phones (so it unfolds down) IF needed at all on touchscreen devices!
+
 ### Design
 
 Figma: https://www.figma.com/file/BsosHsvfv0yUGFwdCbCnQ1/Portfolio-Website?node-id=0%3A1 

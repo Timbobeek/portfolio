@@ -144,4 +144,13 @@ header {
     margin-left: 100%;
   }
 
+  .right{
+    margin-bottom: 10px;
+  }
+
+
+  .row .right { 
+       margin-top: 16px;
+    }
+
   }

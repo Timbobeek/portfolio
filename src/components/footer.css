@@ -12,3 +12,11 @@
     }
 }
 
+
+@media (max-width: 768px){
+    .footer-left{
+        justify-content: center;
+    }
+    /* need to rewrite footer code so it is independent and I can apply flex-direction:reverse-column */
+}
+
