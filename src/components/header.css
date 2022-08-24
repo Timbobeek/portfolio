@@ -20,21 +20,25 @@ header {
     width: 100px;
 }
 
-.headerANDfooter-right {
+.header-right {
     display: flex;
     align-items: center;
 }
 
-.headerANDfooter-right a {
+.header-right a {
     text-decoration: none;
     color: inherit;
 }
 
-.headerANDfooter-right a:hover {
+.header-right a:hover {
     font-weight: bold;
 }
 
 .small-screen{
+  display: none;
+}
+
+.small-screen-menu{
   display: none;
 }
 
@@ -164,6 +168,19 @@ header {
 
   .row .right { 
        margin-top: 16px;
+    }
+
+  }
+
+  /* ------------------------------------------phone view------------------------------------------- */
+
+  @media (max-width: 480px) {
+    
+    .small-screen-menu{
+      display: flex;
+    }
+    .header-right{
+      display: none;
     }
 
   }

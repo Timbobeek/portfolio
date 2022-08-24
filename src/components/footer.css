@@ -1,10 +1,53 @@
+footer {
+    height: 21px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EDDFB3;
+}
+
 .footer-left{
     display: flex;
     width: 400px;
 }
+
+.footer-left a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .git{
     margin-right: 5px;
 }
+
+.footer-right{
+    display: flex;
+    align-items: center;
+}
+
+.footer-right a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-right a:hover {
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 1000px){
     .footer-left{

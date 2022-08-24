@@ -79,9 +79,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ### Next things to do
 
--Read on min-width vs max-width (looks bad when I check on specific devices)
--Redo footer
--Consider redoing the header hover for tablets and phones (so it unfolds down) IF needed at all on touchscreen devices!
+-Redo footer so its independent!
 
 ### Design
 
