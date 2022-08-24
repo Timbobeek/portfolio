@@ -34,6 +34,10 @@ header {
     font-weight: bold;
 }
 
+.small-screen{
+  display: none;
+}
+
 
 /*------------------fancy hover effect (possible to make the hover field narrower???)----------------*/
 
@@ -119,6 +123,7 @@ header {
          margin-top: 16px;
          font-size: 9px;
       }
+
     
      }
 
@@ -136,7 +141,7 @@ header {
   }
 
   .left{
-    justify-content: center;
+    display: none;
   }
 
   .row{
@@ -145,7 +150,15 @@ header {
   }
 
   .right{
+    display: none;
+  }
+
+  .small-screen{
+    display: flex;
+    justify-content: center;
+    align-content: center;
     margin-bottom: 10px;
+    font-weight: bold;
   }
 
 

@@ -6,6 +6,7 @@ const Header = () => {
   return(
       <header>
           <div className='header-left'>
+            <div class="small-screen">Timofey Goloshchapov</div>
             <div id="pillar">
 
               <div class="row">
