@@ -35,19 +35,7 @@ footer {
     font-weight: bold;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* ------------------------------------------laptop view------------------------------------------- */
 
 @media (max-width: 1000px){
     .footer-left{
@@ -55,11 +43,23 @@ footer {
     }
 }
 
+/* ------------------------------------------tablet view------------------------------------------- */
 
 @media (max-width: 768px){
+    footer{
+        flex-direction: column-reverse;
+        height: 40px;
+    }
+
     .footer-left{
         justify-content: center;
+        margin-top: 5px;
     }
-    /* need to rewrite footer code so it is independent and I can apply flex-direction:reverse-column */
+
 }
 
+/* ------------------------------------------phone view------------------------------------------- */
+
+@media (max-width: 480px) {
+
+}
