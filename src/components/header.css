@@ -179,8 +179,22 @@ header {
     .small-screen-menu{
       display: flex;
     }
+
+    .header-left{
+      width: 180px;
+    }
+
     .header-right{
       display: none;
+    }
+
+    .small-screen-menu-one a, .small-screen-menu-two a{
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .small-screen-menu-one a:hover, .small-screen-menu-two a:hover{
+      font-weight: bold;
     }
 
   }
