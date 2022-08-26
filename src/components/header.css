@@ -5,6 +5,7 @@ header {
     justify-content: center;
     align-items: center;
     background-color: #EDDFB3;
+    /* width: 100%; */
 }
 
 .header-left{

@@ -5,6 +5,9 @@ footer {
     justify-content: center;
     align-items: center;
     background-color: #EDDFB3;
+    /* position: absolute;
+    bottom: 0;
+    width: 100%; */
 }
 
 .footer-left{
