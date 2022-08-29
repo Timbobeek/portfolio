@@ -189,6 +189,17 @@ header {
       display: none;
     }
 
+    .small-screen-menu-one, .small-screen-menu-two{
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    .menuOption{
+      display: flex;
+      justify-content: center;
+    }
+
     .small-screen-menu-one a, .small-screen-menu-two a{
       text-decoration: none;
       color: inherit;
