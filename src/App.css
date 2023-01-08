@@ -54,8 +54,8 @@ html {
   border-radius: 10px;
   position: relative;
   z-index: 2;
-  right: 18rem;
-  top: 20rem;
+  /* right: 18rem;
+  top: 20rem; */
 }
 
 .ProfilePicture2{
@@ -63,8 +63,8 @@ html {
   border-radius: 10px;
   position:relative;
   z-index: 2;
-  left: 18rem;
-  bottom: 20rem;
+  /* left: 18rem;
+  bottom: 20rem; */
 }
 
 /* ------------------------------------------laptop view------------------------------------------- */
@@ -82,14 +82,14 @@ html {
   
   .ProfilePicture1{
     width: 18rem;
-    right: 14rem;
-    top: 25rem;
+    /* right: 14rem;
+    top: 25rem; */
   }
   
   .ProfilePicture2{
     width: 18rem;
-    left: 14rem;
-    bottom: 14rem;
+    /* left: 14rem;
+    bottom: 14rem; */
   }
 }
 
@@ -111,14 +111,14 @@ html {
   }
   .ProfilePicture1{
     width: 18rem;
-    right: 0rem;
-    top: 30rem;
+    /* right: 0rem;
+    top: 30rem; */
     
   }
   .ProfilePicture2{
     width: 18rem;
-    left: 0rem;
-    bottom: 17rem;
+    /* left: 0rem;
+    bottom: 17rem; */
   }
 }
 
@@ -143,12 +143,12 @@ html {
 
   .ProfilePicture2{
     width: 10rem;
-    bottom: 9rem;
+    /* bottom: 9rem; */
   }
 
   .ProfilePicture1{
     width: 10rem;
-    top: 26rem;
+    /* top: 26rem; */
   }
 
 }
