@@ -55,8 +55,6 @@ html {
   position: relative;
   z-index: 2;
   transform: translate(-18rem, 20rem);
-  /* right: 18rem;
-  top: 20rem; */
 }
 
 .ProfilePicture2{
@@ -65,8 +63,6 @@ html {
   position:relative;
   z-index: 2;
   transform: translate(18rem, -20rem);
-  /* left: 18rem;
-  bottom: 20rem; */
 }
 
 /* ------------------------------------------laptop view------------------------------------------- */
@@ -84,14 +80,12 @@ html {
   
   .ProfilePicture1{
     width: 18rem;
-    /* right: 14rem;
-    top: 25rem; */
+    transform: translate(-14rem, 25rem);
   }
   
   .ProfilePicture2{
     width: 18rem;
-    /* left: 14rem;
-    bottom: 14rem; */
+    transform: translate(14rem, -14rem);
   }
 }
 
@@ -113,14 +107,12 @@ html {
   }
   .ProfilePicture1{
     width: 18rem;
-    /* right: 0rem;
-    top: 30rem; */
-    
+    transform: translate(0rem, 30rem);
   }
+
   .ProfilePicture2{
     width: 18rem;
-    /* left: 0rem;
-    bottom: 17rem; */
+    transform: translate(0rem, -17rem);
   }
 }
 
@@ -145,12 +137,12 @@ html {
 
   .ProfilePicture2{
     width: 10rem;
-    /* bottom: 9rem; */
+    transform: translate(0rem, -9rem);
   }
 
   .ProfilePicture1{
     width: 10rem;
-    /* top: 26rem; */
+    transform: translate(0rem, 27rem);
   }
 
 }
