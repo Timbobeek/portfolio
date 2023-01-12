@@ -8,7 +8,6 @@ html {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  /* padding-bottom: 0em; */
 }
 
 .welcome{
@@ -16,7 +15,6 @@ html {
   justify-content: center;
   margin-top: 1rem;
   margin-bottom: -8rem;
-  /* change above might be wrong */
   font-size: 3rem;
   font-style: italic;
 }
@@ -31,12 +29,6 @@ html {
 
 .welcome:hover .hiddenMessage {
   display: inline;
-}
-
-.homeImages{
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
 }
 
 .aboutMeText{
@@ -69,14 +61,9 @@ html {
 /* ------------------------------------------laptop view------------------------------------------- */
 
 @media (max-width: 1000px) {
-
-  .homePage{
-    margin-bottom: 9rem;
-  }
   
   .aboutMeText{
     width: 15rem;
-    /* margin-top: 16rem; */
   }
   
   .ProfilePicture1{
@@ -121,11 +108,6 @@ html {
 /* -----------------------------------------phone view----------------------------------------- */
 
 @media (max-width: 480px) {
-  
-
-  .homePage{
-    margin-bottom: 20rem;
-  }
 
   .welcome{
     font-size: 1.1em;
