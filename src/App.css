@@ -8,13 +8,15 @@ html {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 5em;
+  /* padding-bottom: 0em; */
 }
 
 .welcome{
   display: flex;
   justify-content: center;
   margin-top: 1rem;
+  margin-bottom: -8rem;
+  /* change above might be wrong */
   font-size: 3rem;
   font-style: italic;
 }
@@ -44,7 +46,6 @@ html {
   background-color: white;
   width: 20rem;
   padding: 20px;
-  position: absolute;
   z-index: 3;
   border-radius: 10px;
 }
@@ -54,7 +55,7 @@ html {
   border-radius: 10px;
   position: relative;
   z-index: 2;
-  transform: translate(-18rem, 20rem);
+  transform: translate(-18rem, -16rem);
 }
 
 .ProfilePicture2{
@@ -62,7 +63,7 @@ html {
   border-radius: 10px;
   position:relative;
   z-index: 2;
-  transform: translate(18rem, -20rem);
+  transform: translate(18rem, 14rem);
 }
 
 /* ------------------------------------------laptop view------------------------------------------- */
@@ -75,17 +76,17 @@ html {
   
   .aboutMeText{
     width: 15rem;
-    margin-top: 16rem;
+    /* margin-top: 16rem; */
   }
   
   .ProfilePicture1{
     width: 18rem;
-    transform: translate(-14rem, 25rem);
+    transform: translate(-13rem, -14rem);
   }
   
   .ProfilePicture2{
     width: 18rem;
-    transform: translate(14rem, -14rem);
+    transform: translate(13rem, 14rem);
   }
 }
 
@@ -104,15 +105,16 @@ html {
     width: 20rem;
     padding: 20px;
     font-size: 12px;
+    transform: translate(0rem, 8rem);
   }
   .ProfilePicture1{
     width: 18rem;
-    transform: translate(0rem, 30rem);
+    transform: translate(0rem, 6rem);
   }
 
   .ProfilePicture2{
     width: 18rem;
-    transform: translate(0rem, -17rem);
+    transform: translate(0rem, 10rem);
   }
 }
 
@@ -133,16 +135,17 @@ html {
     width: 9rem;
     font-size: .6rem;
     top: 1rem;
+    transform: translate(0rem, 9rem);
   }
 
   .ProfilePicture2{
     width: 10rem;
-    transform: translate(0rem, -9rem);
+    transform: translate(0rem, 10rem);
   }
 
   .ProfilePicture1{
     width: 10rem;
-    transform: translate(0rem, 27rem);
+    transform: translate(0rem, 8rem);
   }
 
 }
