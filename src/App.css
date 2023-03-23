@@ -89,18 +89,18 @@ html {
     font-size: 2rem;
   }
   .aboutMeText{
-    width: 20rem;
+    width: 28rem;
     padding: 20px;
-    font-size: 12px;
+    font-size: 18px;
     transform: translate(0rem, 8rem);
   }
   .ProfilePicture1{
-    width: 18rem;
+    width: 20rem;
     transform: translate(0rem, 6rem);
   }
 
   .ProfilePicture2{
-    width: 18rem;
+    width: 20rem;
     transform: translate(0rem, 10rem);
   }
 }
@@ -110,23 +110,23 @@ html {
 @media (max-width: 480px) {
 
   .welcome{
-    font-size: 1.1em;
+    font-size: 2em;
   }
 
   .aboutMeText{
-    width: 9rem;
-    font-size: .6rem;
+    width: 14rem;
+    font-size: .8rem;
     top: 1rem;
     transform: translate(0rem, 9rem);
   }
 
   .ProfilePicture2{
-    width: 10rem;
+    width: 12rem;
     transform: translate(0rem, 10rem);
   }
 
   .ProfilePicture1{
-    width: 10rem;
+    width: 12rem;
     transform: translate(0rem, 8rem);
   }
 

@@ -27,8 +27,8 @@ const Header = () => {
             <div className='small-screen-menu-two'>
               <div className='menuOption'><Link to="resume">Resume</Link></div>
               {/* <div className='menuOption'><Link to="accomplishments">Accomplishments</Link></div> */}
-              {/* <div className='menuOption'><Link to="hobbies">My Hobbies</Link></div> */}
-              <div className='menuOption'>My Hobbies</div>
+              <div className='menuOption'><Link to="hobbies">My Hobbies</Link></div>
+              {/* <div className='menuOption'>My Hobbies</div> */}
             </div>
           </div>
           
@@ -38,8 +38,8 @@ const Header = () => {
             <div className='menuOption'>Projects</div>
             <div className='menuOption'><Link to="resume">Resume</Link></div>
             {/* <div className='menuOption'><Link to="accomplishments">Accomplishments</Link></div> */}
-            {/* <div className='menuOption'><Link to="hobbies">My Hobbies</Link></div> */}
-            <div className='menuOption'>My Hobbies</div>
+            <div className='menuOption'><Link to="hobbies">My Hobbies</Link></div>
+            {/* <div className='menuOption'>My Hobbies</div> */}
           </div>
       </header>
   );
