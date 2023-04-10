@@ -43,8 +43,41 @@ header {
   display: none;
 }
 
+.burger{
+  /* overflow: hidden; */
+  background-color: #333;
+  position: relative;
+}
 
-/*------------------fancy hover effect (possible to make the hover field narrower???)----------------*/
+.burger #myLinks {
+  display: none;
+}
+
+.burger a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.burger a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.burger a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+/*------------------fancy hover effect----------------*/
 
 
 

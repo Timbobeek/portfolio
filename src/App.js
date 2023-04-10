@@ -6,8 +6,8 @@ const App = () => {
   return(
     <div className='homePage'>
       <span className='welcome'>
-        <span class="message">Welcome!</span>
-        <span class="hiddenMessage">Добро пожаловать!</span>
+        <span className="message">Welcome!</span>
+        <span className="hiddenMessage">Добро пожаловать!</span>
       </span>
       <img className='ProfilePicture2' src="homeface2.jpg" alt="my profile pic2"/>
       <div className='aboutMeText'>
