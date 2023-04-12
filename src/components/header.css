@@ -182,7 +182,6 @@ header {
     }
     
     .small-screen-menu{
-      /* overflow: hidden; */
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -200,6 +199,7 @@ header {
     .title{
       display: flex;
       font-size: large;
+      /* font-family:    sans-serif;  ----> need a fun font!!! */
     }
 
     .burger{
@@ -215,7 +215,6 @@ header {
       left: 0px;
       width: 100%;
       background-color: brown;
-      /* margin-top: 14.37rem; */
       z-index: 3;
     }
     
@@ -232,19 +231,22 @@ header {
       text-decoration: none;
       font-size: 17px;
       display: block;
+      text-align: center;
+    }
+
+    .small-screen-menu #myLinks a:hover{
+      background-color: #EDDFB3;
     }
     
     /* Style the hamburger menu */
     .burger a.icon {
       display: flex;
       position: relative;
-      /* right: 0;
-      top: 0; */
     }
     
     /* Add a grey background color on mouse-over */
     .burger a:hover {
-      color: white;
+      color: brown;
     }
 
   }

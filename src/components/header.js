@@ -46,6 +46,7 @@ const Header = () => {
                 <i className="fa fa-bars fa-lg"></i>
               </a>
             </div>
+            
             <div id="myLinks">
                 <a href="/">Home</a>
                 <a href="projects">Projects</a>
