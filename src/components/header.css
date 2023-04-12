@@ -44,7 +44,7 @@ header {
 }
 
 
-/*------------------fancy hover effect (possible to make the hover field narrower???)----------------*/
+/*------------------fancy hover effect----------------*/
 
 
 
@@ -129,7 +129,6 @@ header {
          font-size: 9px;
       }
 
-    
      }
 
 /* ------------------------------------------tablet view------------------------------------------- */
@@ -176,12 +175,20 @@ header {
   /* ------------------------------------------phone view------------------------------------------- */
 
   @media (max-width: 480px) {
+
+    header{
+      display: flex;
+      align-items: stretch;
+    }
     
     .small-screen-menu{
       display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
 
     .header-left{
+      display: none;
       width: 180px;
     }
 
@@ -189,24 +196,57 @@ header {
       display: none;
     }
 
-    .small-screen-menu-one, .small-screen-menu-two{
-      flex-wrap: wrap;
-      flex-direction: row;
-      justify-content: center;
-    }
-
-    .menuOption{
+    .title{
       display: flex;
-      justify-content: center;
+      font-size: large;
+      /* font-family:    sans-serif;  ----> need a fun font!!! */
     }
 
-    .small-screen-menu-one a, .small-screen-menu-two a{
+    .burger{
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+
+    .small-screen-menu #myLinks {
+      display: none;
+      position: absolute;
+      top: 80px;
+      left: 0px;
+      width: 100%;
+      background-color: brown;
+      z-index: 3;
+    }
+    
+    .small-screen-menu a {
+      color: black;
       text-decoration: none;
-      color: inherit;
+      font-size: 17px;
+      display: block;
     }
 
-    .small-screen-menu-one a:hover, .small-screen-menu-two a:hover{
-      font-weight: bold;
+    .small-screen-menu #myLinks a {
+      color: black;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      display: block;
+      text-align: center;
+    }
+
+    .small-screen-menu #myLinks a:hover{
+      background-color: #EDDFB3;
+    }
+    
+    /* Style the hamburger menu */
+    .burger a.icon {
+      display: flex;
+      position: relative;
+    }
+    
+    /* Add a grey background color on mouse-over */
+    .burger a:hover {
+      color: brown;
     }
 
   }
