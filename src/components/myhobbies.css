@@ -1,57 +1,43 @@
-/* 
-
-
-
-#pillar {display: block; margin: 100px auto; width: 300px; transform: translateX(-200px); 
- perspective: 1900px;
+.hobbiesTitle{
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  font-size: large;
 }
 
-.wrap {display: flex; transform: rotateY(0deg);
-transition: all 1.0s cubic-bezier(.25,.8,.25,1);
-   transform-style: preserve-3d;
-}
-
-.row {
-  width: 800px;
+.wrapper {
   position: relative;
-  z-index: 2;
-  color: black;
-  font-size: 20px;
-  /* text-transform: uppercase; */
-  /* font-weight: bold;
-  transform-style: preserve-3d;
-  transform: rotateY(0deg);
-  transition: all 3.0s cubic-bezier(.25,.8,.25,1);
+  flex-grow: 1;
+  margin: auto;
+  max-width: 80%;
+  max-height: 20%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 2vmin;
+  justify-items: center;
+  align-items: center;
+  /* margin-bottom: 50%; */
+}
+
+.wrapper IMG {
+  z-index: 1;
+  grid-column: span 2;
+  max-width: 100%;
+  margin-bottom: -52%;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  transform: scale(1);
+  transition: all .25s;
+}
+
+.wrapper IMG:nth-child(3n + 1){
+    grid-column: 2 / span 2;
+  }
+  
+.wrapper IMG:hover {
+    z-index: 2;
+    transform: scale(2);
   }
 
-  .row:hover .wrap{
-    transform: rotateY(-45deg);
-    cursor: pointer;
-  }
-
-  .row:hover{
-    z-index: 1;
-  }
-
-  .row:hover::before .left{
-    width: 55%;
-  }
-
-  .left { width: 400px; padding: 15px 20px; text-align: right;
-    
-   transform-style: preserve-3d;
-  transform: rotateY(0deg); */
- /* before: {content: "";
-       position: absolute; display: block; top:0; left:0; width: 50%; height: 100%;
-      transition: width 1s ease-in-out;
-    } */
-    
-  /* }
-  .right { width: 400px; padding: 15px 20px;
-  text-align: left;
-    transform: rotateY(90deg);
-  transform-origin: left center;
-    transform-style: preserve-3d;
-     backface-visibility: hidden;
-  } */
 
