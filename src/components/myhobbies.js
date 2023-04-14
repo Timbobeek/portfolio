@@ -25,9 +25,11 @@ const Hobbies = () => {
         <img src="https://source.unsplash.com/random/600x600?nature" alt=""/>
         <img src="https://source.unsplash.com/random/600x600?blossom" alt=""/>
         <img src="https://source.unsplash.com/random/600x600?ice" alt=""/>
-        <img className='imgLast' src="https://source.unsplash.com/random/600x600?spring" alt=""/> 
+        <img className='imgLast' src="https://source.unsplash.com/random/600x600?spring" alt=""/>
       </div>
-      <span id='text'>I like water a lot!!!!</span>
+      <div className='textDiv'>
+        <span id='text'>I like water a lot!!!!</span> 
+      </div>
     </div>
   );
 }

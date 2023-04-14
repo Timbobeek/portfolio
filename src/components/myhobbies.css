@@ -62,7 +62,7 @@
 
 
 @media (min-width: 480px){
-  
+
   .wrapper {
     position: relative;
     flex-grow: 1;
@@ -79,6 +79,7 @@
   }
   
   .wrapper IMG {
+    position: relative;
     z-index: 1;
     grid-column: span 2;
     max-width: 100%;
@@ -106,9 +107,14 @@
   }
 
   #text{
+    position: relative;
+    z-index: 2;
     display: none;
     background-color: lime;
-    padding: 10px;
+    padding: 50px;
+    top: -300px;
+    width: 100px;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
   }
   
 }
