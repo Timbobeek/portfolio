@@ -104,6 +104,12 @@
   .wrapper .imgTwo:hover{
     transform: scale(1.5) translate(0, 20%);
   }
+
+  #text{
+    display: none;
+    background-color: lime;
+    padding: 10px;
+  }
   
 }
 
