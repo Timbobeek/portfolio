@@ -6,118 +6,133 @@
   font-size: large;
 }
 
-@media (max-width: 480px){
-
-  .hobbiesTitle{
-    display: flex;
-    justify-content: center;
-    margin-top: 10%;
-    margin-bottom: 10%;
-    font-size: large;
-  }
-
-  .wrapper {
-    position: relative;
-    flex-grow: 1;
-    margin: auto;
-    max-width: 80%;
-    max-height: 20%;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    grid-gap: 2vmin;
-    justify-items: center;
-    align-items: center;
-    margin-bottom: 50%;
-  }
-
-  .wrapper IMG {
-    z-index: 1;
-    grid-column: span 2;
-    max-width: 100%;
-    margin-bottom: -52%;
-    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-    transform: scale(1);
-    transition: all .25s;
-  }
-
-  .wrapper IMG:nth-child(3n + 1){
-      grid-column: 2 / span 2;
-    }
-    
-  .wrapper IMG:hover {
-      z-index: 2;
-      transform: scale(1.5);
-  }
-
-  .wrapper .imgOne:hover{
-    transform: scale(1.5) translate(0, 20%);
-  }
-
-  .wrapper .imgLast:hover{
-    transform: scale(1.5) translate(0, -20%);
-  }
-
-}
-
+ /* ----------------tablets and pc----------------- */
 
 @media (min-width: 480px){
-
+  
   .wrapper {
     position: relative;
     flex-grow: 1;
     margin: auto;
-    max-width: 80%;
-    max-height: 20%;
+    max-width: 1200px;
+    max-height: 1200px;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(4, 1fr);
     grid-gap: 2vmin;
     justify-items: center;
     align-items: center;
-    margin-bottom: 10%;
   }
   
-  .wrapper IMG {
-    position: relative;
+  img {
+    max-width: 100%;
+  }
+  
+  .image {
     z-index: 1;
     grid-column: span 2;
     max-width: 100%;
     margin-bottom: -52%;
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
     transform: scale(1);
-    transition: all .25s;
+    transition: all 0.25s;
   }
-    
-  .wrapper IMG:nth-child(7n + 1) {
-      grid-column: 2 / span 2;
-    }
-    
-  .wrapper IMG:hover {
+  
+  .image:nth-child(7n + 1) {
+    grid-column: 2 / span 2;
+  }
+
+  .image:hover {
       z-index: 2;
-      transform: scale(1.5);
+      transform: scale(1.1);
     }
   
-  .wrapper .text1{
-    background-color: white;
-  }
-
-  .wrapper .imgTwo:hover{
-    transform: scale(1.5) translate(0, 20%);
-  }
-
-  #text{
-    position: relative;
-    z-index: 2;
+  .image .description {
+    position: absolute;
     display: none;
-    background-color: lime;
-    padding: 50px;
-    top: -300px;
-    width: 100px;
-    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.35);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
   
+  .image:hover .description {
+    display: flex;
+  }
 }
+
+ /* ----------------mobile----------------- */
+
+@media (max-width: 480px){
+  
+  .hobbiesTitle{
+    margin-top: 15%;
+  }
+
+  .wrapper {
+    position: relative;
+    flex-grow: 1;
+    margin: auto;
+    max-width: 350px;
+    max-height: 350px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 2vmin;
+    justify-items: center;
+    align-items: center;
+    margin-top: 15%;
+    margin-bottom: 500px;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  .image {
+    z-index: 1;
+    grid-column: span 2;
+    max-width: 100%;
+    margin-bottom: -52%;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    transform: scale(1);
+    transition: all 0.25s;
+  }
+  
+  .image:nth-child(3n + 1) {
+    grid-column: 2 / span 2;
+  }
+
+  .image:hover {
+    z-index: 2;
+    transform: scale(1.1);
+  }
+  
+  .image .description {
+    position: absolute;
+    display: none;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.35);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .image:hover .description {
+    display: flex;
+  }
+
+}
+
 
 
 
