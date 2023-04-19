@@ -143,6 +143,30 @@
     display: flex;
   }
 
+  #img2:hover{
+    transform: scale(1.5) translate(20px);
+  }
+
+  #img3:hover{
+    transform: scale(1.5) translate(-20px);
+  }
+
+  #img5:hover{
+    transform: scale(1.5) translate(20px);
+  }
+
+  #img6:hover{
+    transform: scale(1.5) translate(-20px);
+  }
+
+  #img8:hover{
+    transform: scale(1.5) translate(20px);
+  }
+
+  #img9:hover{
+    transform: scale(1.5) translate(-20px);
+  }
+
 }
 
 

@@ -8,7 +8,7 @@ const Hobbies = () => {
     <div className='hobbiesPage'>
       <span className='hobbiesTitle'>My Hobbies</span>
       <div className="wrapper">
-        <div className="image">
+        <div className="image" id='img1'>
           <img src="https://source.unsplash.com/random/600x600?water" alt=""/>
           <div className="description">
             <p>I like water a lot!!!!</p>
@@ -20,49 +20,49 @@ const Hobbies = () => {
             <p>summer is dope</p>
           </div>
         </div>
-        <div className="image">
+        <div className="image" id='img3'>
           <img src="https://source.unsplash.com/random/600x600?plants" alt=""/>
           <div className="description">
             <p>plantssssss</p>
           </div>
         </div>
-        <div className="image">
+        <div className="image" id='img4'>
           <img src="https://source.unsplash.com/random/600x600?snow" alt=""/>
           <div className="description">
             <p>snowyyyyy</p>
           </div>
         </div>
-        <div className="image">
+        <div className="image" id='img5'>
           <img src="https://source.unsplash.com/random/600x600?roses" alt=""/>
           <div className="description">
             <p>roses are red</p>
           </div>
         </div>
-        <div className="image">
+        <div className="image" id='img6'>
           <img src="https://source.unsplash.com/random/600x600?sky" alt=""/>
           <div className="description">
             <p>sky is meh</p>
           </div>
         </div>
-        <div className="image">
+        <div className="image" id='img7'>
           <img src="https://source.unsplash.com/random/600x600?nature" alt=""/>
           <div className="description">
             <p>nature is natural</p>
           </div>
         </div>
-        <div className="image">
+        <div className="image" id='img8'>
           <img src="https://source.unsplash.com/random/600x600?blossom" alt=""/>
           <div className="description">
             <p>blossomy blossom</p>
           </div>
         </div>
-        <div className="image">
+        <div className="image" id='img9'>
           <img src="https://source.unsplash.com/random/600x600?ice" alt=""/>
           <div className="description">
             <p>ice babyyyyy</p>
           </div>
         </div>
-        <div className="image">
+        <div className="image" id='img10'>
           <img src="https://source.unsplash.com/random/600x600?spring" alt=""/>
           <div className="description">
             <p>spring is allergic</p>
