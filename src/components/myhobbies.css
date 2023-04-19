@@ -1,8 +1,16 @@
+
+.hobbiesPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 8% 8% 8%
+}
+
 .hobbiesTitle{
   display: flex;
   justify-content: center;
-  margin-top: 2%;
-  margin-bottom: 2%;
+  margin-top: 5%;
+  margin-bottom: 5%;
   font-size: large;
 }
 
@@ -19,7 +27,7 @@
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    grid-gap: 2vmin;
+    grid-gap: 1vmin;
     justify-items: center;
     align-items: center;
   }
@@ -44,7 +52,7 @@
 
   .image:hover {
       z-index: 2;
-      transform: scale(1.1);
+      transform: scale(1.5);
     }
   
   .image .description {
@@ -63,6 +71,10 @@
   
   .image:hover .description {
     display: flex;
+  }
+
+  #img2:hover{
+    transform: scale(1.5) translate(0, 20px);
   }
 }
 
@@ -83,7 +95,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    grid-gap: 2vmin;
+    grid-gap: 1vmin;
     justify-items: center;
     align-items: center;
     margin-top: 15%;
@@ -110,7 +122,7 @@
 
   .image:hover {
     z-index: 2;
-    transform: scale(1.1);
+    transform: scale(1.5);
   }
   
   .image .description {
