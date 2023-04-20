@@ -11,7 +11,8 @@
   justify-content: center;
   margin-top: 5%;
   margin-bottom: 5%;
-  font-size: large;
+  font-size: 3rem;
+  font-style: italic;
 }
 
  /* ----------------tablets and pc----------------- */
@@ -19,6 +20,7 @@
 @media (min-width: 480px){
   
   .wrapper {
+    font-size: 15px;
     position: relative;
     flex-grow: 1;
     margin: auto;
@@ -35,6 +37,7 @@
   img {
     max-width: 100%;
     margin-bottom: -10px;
+    aspect-ratio: 1;
   }
   
   .image {
@@ -64,10 +67,15 @@
     top: 0px;
     left: 0px;
     color: #ffffff;
-    background: rgba(0, 0, 0, 0.35);
+    background: rgba(0, 0, 0, 0.7);
     align-items: center;
     justify-content: center;
     flex-direction: column;
+  }
+
+  .image .description p{
+    width: 50%;
+    text-align: center;
   }
   
   .image:hover .description {
@@ -78,6 +86,21 @@
     transform: scale(1.5) translate(0, 20px);
   }
 }
+
+/* ----------------tablet/laptop specific----------------- */
+
+@media (max-width: 1000px){
+  .wrapper{
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 768px){
+  .wrapper{
+    font-size: 7px;
+  }
+}
+
 
  /* ----------------mobile----------------- */
 
@@ -106,6 +129,7 @@
   img {
     max-width: 100%;
     margin-bottom: -10px;
+    aspect-ratio: 1;
   }
   
   .image {
@@ -135,10 +159,16 @@
     top: 0px;
     left: 0px;
     color: #ffffff;
-    background: rgba(0, 0, 0, 0.35);
+    background: rgba(0, 0, 0, 0.7);
     align-items: center;
     justify-content: center;
     flex-direction: column;
+  }
+
+  .image .description p{
+    width: 50%;
+    font-size: 10px;
+    text-align: center;
   }
   
   .image:hover .description {

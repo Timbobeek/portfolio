@@ -9,63 +9,63 @@ const Hobbies = () => {
       <span className='hobbiesTitle'>My Hobbies</span>
       <div className="wrapper">
         <div className="image" id='img1'>
-          <img src="https://source.unsplash.com/random/600x600?water" alt=""/>
+          <img src="stang.jpg" alt="driving"/>
           <div className="description">
-            <p>I like water a lot!!!!</p>
+            <p>Traveling by car gives me a lot of joy - some day I will be doing it in a '65 Mustang</p>
           </div>
         </div>
         <div className="image" id='img2'>
-          <img src="https://source.unsplash.com/random/600x600?summer" alt=""/>
+          <img src="language.jpg" alt="languages"/>
           <div className="description">
-            <p>summer is dope</p>
+            <p>🤓Fluent in Russian/English, can converse in Ukrainian, learning Spanish and German</p>
           </div>
         </div>
         <div className="image" id='img3'>
-          <img src="https://source.unsplash.com/random/600x600?plants" alt=""/>
+          <img src="badminton.jpg" alt="badminton"/>
           <div className="description">
-            <p>plantssssss</p>
+            <p>Badminton is a great alternative to my favorite sport of football ⚽ </p>
           </div>
         </div>
         <div className="image" id='img4'>
-          <img src="https://source.unsplash.com/random/600x600?snow" alt=""/>
+          <img src="guitar.webp" alt="guitar"/>
           <div className="description">
-            <p>snowyyyyy</p>
+            <p>Not very good at it, but when I play, my soul rests</p>
           </div>
         </div>
         <div className="image" id='img5'>
-          <img src="https://source.unsplash.com/random/600x600?roses" alt=""/>
+          <img src="football.jpg" alt="football"/>
           <div className="description">
-            <p>roses are red</p>
+            <p>Football is the love of my life ❤️ </p>
           </div>
         </div>
         <div className="image" id='img6'>
-          <img src="https://source.unsplash.com/random/600x600?sky" alt=""/>
+          <img src="gym.jpg" alt="gym"/>
           <div className="description">
-            <p>sky is meh</p>
+            <p>Bench press? Deadlift? Pull-ups? Squats? Bicep curls? Yes!</p>
           </div>
         </div>
         <div className="image" id='img7'>
-          <img src="https://source.unsplash.com/random/600x600?nature" alt=""/>
+          <img src="movies.png" alt="movies"/>
           <div className="description">
-            <p>nature is natural</p>
+            <p>Having worked at a movie theatre for 6 years, it is impossible to not love cinema</p>
           </div>
         </div>
         <div className="image" id='img8'>
-          <img src="https://source.unsplash.com/random/600x600?blossom" alt=""/>
+          <img src="pool.jpg" alt="billiard"/>
           <div className="description">
-            <p>blossomy blossom</p>
+            <p>One of my most recent hobbies, I call it "chess for cool people"</p>
           </div>
         </div>
         <div className="image" id='img9'>
-          <img src="https://source.unsplash.com/random/600x600?ice" alt=""/>
+          <img src="pubg.jpg" alt="pubg"/>
           <div className="description">
-            <p>ice babyyyyy</p>
+            <p>I hate this game (2k+ hours)</p>
           </div>
         </div>
         <div className="image" id='img10'>
-          <img src="https://source.unsplash.com/random/600x600?spring" alt=""/>
+          <img src="twitch.png" alt="twitch"/>
           <div className="description">
-            <p>spring is allergic</p>
+            <p>Can watch a major, can watch a dude with 2 views (I tried streaming once)</p>
           </div>
       </div>
     </div>
