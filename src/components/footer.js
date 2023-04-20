@@ -1,16 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './footer.css';
+import github from '../images/github.png'
+import linkedin from '../images/linkedin.png'
 
 const Footer = () => {
   return(
     <footer>
       <div className='footer-left'>
         <div className='git'>
-          <a href = "https://github.com/Timbobeek" target="_blank" rel="noreferrer"><img src = "github.png" width="40" height="40" alt='logo'/></a>
+          <a href = "https://github.com/Timbobeek" target="_blank" rel="noreferrer"><img src={github} width="40" height="40" alt='logo'/></a>
         </div>
         <div className='lin'>
-          <a href = "https://www.linkedin.com/in/timofey-goloshchapov/" target="_blank" rel="noreferrer"><img src = "linkedin.png" width="40" height="40" alt='logo'/></a>
+          <a href = "https://www.linkedin.com/in/timofey-goloshchapov/" target="_blank" rel="noreferrer"><img src={linkedin} width="40" height="40" alt='logo'/></a>
         </div>
       </div>
 
