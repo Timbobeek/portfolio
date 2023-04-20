@@ -1,57 +1,207 @@
-/* 
 
-
-
-#pillar {display: block; margin: 100px auto; width: 300px; transform: translateX(-200px); 
- perspective: 1900px;
+.hobbiesPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 8% 8% 8%
 }
 
-.wrap {display: flex; transform: rotateY(0deg);
-transition: all 1.0s cubic-bezier(.25,.8,.25,1);
-   transform-style: preserve-3d;
+.hobbiesTitle{
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  font-size: 3rem;
+  font-style: italic;
 }
 
-.row {
-  width: 800px;
-  position: relative;
-  z-index: 2;
-  color: black;
-  font-size: 20px;
-  /* text-transform: uppercase; */
-  /* font-weight: bold;
-  transform-style: preserve-3d;
-  transform: rotateY(0deg);
-  transition: all 3.0s cubic-bezier(.25,.8,.25,1);
-  }
+ /* ----------------tablets and pc----------------- */
 
-  .row:hover .wrap{
-    transform: rotateY(-45deg);
-    cursor: pointer;
+@media (min-width: 480px){
+  
+  .wrapper {
+    font-size: 15px;
+    position: relative;
+    flex-grow: 1;
+    margin: auto;
+    max-width: 1200px;
+    max-height: 1200px;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 1vmin;
+    justify-items: center;
+    align-items: center;
   }
-
-  .row:hover{
+  
+  img {
+    max-width: 100%;
+    margin-bottom: -10px;
+    aspect-ratio: 1;
+  }
+  
+  .image {
     z-index: 1;
+    grid-column: span 2;
+    max-width: 100%;
+    margin-bottom: -50%;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    transform: scale(1);
+    transition: all 0.25s;
+  }
+  
+  .image:nth-child(7n + 1) {
+    grid-column: 2 / span 2;
   }
 
-  .row:hover::before .left{
-    width: 55%;
+  .image:hover {
+      z-index: 2;
+      transform: scale(1.5);
+    }
+  
+  .image .description {
+    position: absolute;
+    display: none;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.7);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
 
-  .left { width: 400px; padding: 15px 20px; text-align: right;
-    
-   transform-style: preserve-3d;
-  transform: rotateY(0deg); */
- /* before: {content: "";
-       position: absolute; display: block; top:0; left:0; width: 50%; height: 100%;
-      transition: width 1s ease-in-out;
-    } */
-    
-  /* }
-  .right { width: 400px; padding: 15px 20px;
-  text-align: left;
-    transform: rotateY(90deg);
-  transform-origin: left center;
-    transform-style: preserve-3d;
-     backface-visibility: hidden;
-  } */
+  .image .description p{
+    width: 50%;
+    text-align: center;
+  }
+  
+  .image:hover .description {
+    display: flex;
+  }
+
+  #img2:hover{
+    transform: scale(1.5) translate(0, 20px);
+  }
+}
+
+/* ----------------tablet/laptop specific----------------- */
+
+@media (max-width: 1000px){
+  .wrapper{
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 768px){
+  .wrapper{
+    font-size: 7px;
+  }
+}
+
+
+ /* ----------------mobile----------------- */
+
+@media (max-width: 480px){
+  
+  .hobbiesTitle{
+    margin-top: 15%;
+  }
+
+  .wrapper {
+    position: relative;
+    flex-grow: 1;
+    margin: auto;
+    max-width: 350px;
+    max-height: 350px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 1vmin;
+    justify-items: center;
+    align-items: center;
+    margin-top: 15%;
+    margin-bottom: 500px;
+  }
+  
+  img {
+    max-width: 100%;
+    margin-bottom: -10px;
+    aspect-ratio: 1;
+  }
+  
+  .image {
+    z-index: 1;
+    grid-column: span 2;
+    max-width: 100%;
+    margin-bottom: -48%;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    transform: scale(1);
+    transition: all 0.25s;
+  }
+  
+  .image:nth-child(3n + 1) {
+    grid-column: 2 / span 2;
+  }
+
+  .image:hover {
+    z-index: 2;
+    transform: scale(1.5);
+  }
+  
+  .image .description {
+    position: absolute;
+    display: none;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.7);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .image .description p{
+    width: 50%;
+    font-size: 10px;
+    text-align: center;
+  }
+  
+  .image:hover .description {
+    display: flex;
+  }
+
+  #img2:hover{
+    transform: scale(1.5) translate(20px);
+  }
+
+  #img3:hover{
+    transform: scale(1.5) translate(-20px);
+  }
+
+  #img5:hover{
+    transform: scale(1.5) translate(20px);
+  }
+
+  #img6:hover{
+    transform: scale(1.5) translate(-20px);
+  }
+
+  #img8:hover{
+    transform: scale(1.5) translate(20px);
+  }
+
+  #img9:hover{
+    transform: scale(1.5) translate(-20px);
+  }
+
+}
+
+
+
+
 
