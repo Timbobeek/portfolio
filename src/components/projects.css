@@ -158,6 +158,8 @@
       }
     }
 
+/* ------------------------------------------------------laptop----------------------------------------------- */
+
 @media (min-width: 769px) and (max-width: 1000px){
   @keyframes alpha-transition {
     0% {
@@ -246,18 +248,18 @@
   }
 
   .container .card:hover .p1{
-    font-size: 2em;
+    font-size: 1.5em;
     color: black;
   }
 
   .container .card .p2{
-    font-size: 1.5em;
+    font-size: 1.2em;
     color: rgba(141, 83, 11, 1);
   }
 
   .container .card .p3{
     color: brown;
-    font-size: 1.2em;
+    font-size: 1em;
   }
   
   .container .card:hover {
@@ -319,7 +321,7 @@
 }
 
 
- /* ----------------tablet/mobile----------------- */
+ /* ----------------------------------------------------------------tablet--------------------------------------------------- */
 
  @media (min-width: 481px) and (max-width: 768px){
       
@@ -435,35 +437,24 @@
         text-align: center;
         color: white;
         background: rgba(237,223,179, 0.9);
-        transform: translateY(80px) rotate(0deg) skew(0deg);
+        transform: translateY(60%) rotate(0deg) skew(0deg);
         flex-grow: 5;
         transition: 3s;
+        font-weight: 500;
       }
 
       .container .card:hover .p1{
-        /* default black 1 */
-        /* color: beige; */
-        /* brown 2 */
-        /* color: black; */
-        /* dark beige 3 */
+        font-size: 1.2em;
         color: black;
       }
 
       .container .card .p2{
-        /* default black 1 */
-        /* color: aqua; */
-        /* brown 2 */
-        /* color: aqua; */
-        /* dark beige 3 */
+        font-size: 0.9em;
         color: rgba(141, 83, 11, 1);
       }
 
       .container .card .p3{
-        /* default black 1 */
-        /* color: beige; */
-        /* brown 2 */
-        /* color: #eddfb3; */
-        /* dark beige 3 */
+        font-size: 0.7em;
         color: brown;
       }
       
@@ -481,8 +472,9 @@
       .container .card:hover .p3 {
         display: block;
       }
-      
  }
+
+ /* ------------------------------------------------------mobile----------------------------------------------- */
 
  @media (max-width: 480px){
   @keyframes alpha-transition {
