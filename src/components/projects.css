@@ -112,7 +112,7 @@
           text-align: center;
           top: calc(90% - 6em);
           background: rgba(237,223,179, 0.9);
-          transform: rotate(0deg) skew(0deg);
+          transform: skew(0deg);
           width: calc(100% - 1em);
           overflow: hidden;
           font-weight: 500;
@@ -274,7 +274,7 @@
       text-align: center;
       top: calc(90% - 6em);
       background: rgba(237,223,179, 0.9);
-      transform: rotate(0deg) skew(0deg);
+      transform: skew(0deg);
       width: calc(100% - 1em);
       overflow: hidden;
       font-weight: 500;
@@ -393,6 +393,8 @@
       
       .container .card:hover {
         flex-grow: 5;
+        justify-content: center;
+        align-items: flex-end;
       
         --gradient-alpha: 0;
         animation: alpha-transition 2s;
@@ -434,12 +436,11 @@
       }
       
       .container .card:hover .card__head {
-        text-align: center;
         color: white;
         background: rgba(237,223,179, 0.9);
-        transform: translateY(60%) rotate(0deg) skew(0deg);
+        transform: skew(0deg);
         flex-grow: 5;
-        transition: 3s;
+        transition: 2s;
         font-weight: 500;
       }
 
@@ -548,6 +549,8 @@
   
     --gradient-alpha: 0;
     animation: alpha-transition 2s;
+    justify-content: center;
+    align-items: flex-end;
   }
   
   .container .card#project1 {
@@ -589,35 +592,24 @@
     text-align: center;
     color: white;
     background: rgba(237,223,179, 0.9);
-    transform: translateY(80px) rotate(0deg) skew(0deg);
+    transform: rotate(0deg) skew(0deg);
     flex-grow: 5;
-    transition: 3s;
+    transition:  2s;
+    font-weight: 500;
   }
 
   .container .card:hover .p1{
-    /* default black 1 */
-    /* color: beige; */
-    /* brown 2 */
-    /* color: black; */
-    /* dark beige 3 */
+    font-size: 1.2em;
     color: black;
   }
 
   .container .card .p2{
-    /* default black 1 */
-    /* color: aqua; */
-    /* brown 2 */
-    /* color: aqua; */
-    /* dark beige 3 */
+    font-size: 0.9em;
     color: rgba(141, 83, 11, 1);
   }
 
   .container .card .p3{
-    /* default black 1 */
-    /* color: beige; */
-    /* brown 2 */
-    /* color: #eddfb3; */
-    /* dark beige 3 */
+    font-size: 0.7em;
     color: brown;
   }
   
@@ -635,4 +627,5 @@
   .container .card:hover .p3 {
     display: block;
   }
+
  }
