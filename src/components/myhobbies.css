@@ -17,7 +17,7 @@
 
  /* ----------------tablets and pc----------------- */
 
-@media (min-width: 480px){
+@media (min-width: 769px){
   
   .wrapper {
     font-size: 15px;
@@ -102,9 +102,9 @@
 }
 
 
- /* ----------------mobile----------------- */
+ /* ----------------tablet/mobile----------------- */
 
-@media (max-width: 480px){
+@media (max-width: 768px){
   
   .hobbiesTitle{
     margin-top: 15%;

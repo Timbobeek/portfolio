@@ -17,7 +17,6 @@ const Header = () => {
           <div className='header-left'>
             <div className="small-screen">Timofey Goloshchapov</div>
             <div id="pillar">
-
               <div className="row">
                 <div className="wrap">
                   <div className="left">Timofey Goloshchapov</div>
@@ -30,33 +29,25 @@ const Header = () => {
           <div className='header-right'>
             <div className='menuOption'><Link to="/">Home</Link></div>
             <div className='menuOption'><Link to="projects">Projects</Link></div>
-            {/* <div className='menuOption'>Projects</div> */}
             <div className='menuOption'><Link to="resume">Resume</Link></div>
             {/* <div className='menuOption'><Link to="accomplishments">Accomplishments</Link></div> */}
             <div className='menuOption'><Link to="hobbies">My Hobbies</Link></div>
-            {/* <div className='menuOption'>My Hobbies</div> */}
           </div>
           
           <div className='small-screen-menu'>
-
             <div className='title'>Timofey Goloshchapov</div>
-
             <div className='burger'>
               <a href="#" className="icon" onClick={myFunction}>
                 <i className="fa fa-bars fa-lg"></i>
               </a>
             </div>
-            
             <div id="myLinks">
                 <a href="/">Home</a>
-                <a href="projects">Projects</a>
-                <a href="resume">Resume</a>
-                <a href="hobbies">My Hobbies</a>
-              </div>
-            
+                <a href="/projects">Projects</a>
+                <a href="/resume">Resume</a>
+                <a href="/hobbies">My Hobbies</a>
+            </div>
           </div>
-          
-
       </header>
   );
 }
