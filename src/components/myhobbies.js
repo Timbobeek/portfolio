@@ -16,7 +16,7 @@ const Hobbies = () => {
 
   return(
     <div className='hobbiesPage'>
-      <span className='hobbiesTitle'>My Hobbies</span>
+      {/* <span className='hobbiesTitle'>My Hobbies</span> */}
       <div className="wrapper">
         <div className="image" id='img1'>
           <img src={stang} alt="driving"/>
