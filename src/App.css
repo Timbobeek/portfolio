@@ -10,25 +10,13 @@ html {
   align-items: center;
 }
 
-.welcome{
+.welcomeText{
   display: flex;
   justify-content: center;
-  margin-top: 1rem;
-  margin-bottom: -8rem;
   font-size: 3rem;
   font-style: italic;
-}
-
-.welcome .hiddenMessage {
-  display: none;
-}
-
-.welcome:hover .message {
-  display: none;
-}
-
-.welcome:hover .hiddenMessage {
-  display: inline;
+  min-height: 1.5em;
+  margin: 2%;
 }
 
 .aboutMeText{
@@ -40,6 +28,7 @@ html {
   padding: 20px;
   z-index: 3;
   border-radius: 10px;
+  transform: translate(0, -15rem);
 }
 
 .ProfilePicture1{
@@ -47,7 +36,7 @@ html {
   border-radius: 10px;
   position: relative;
   z-index: 2;
-  transform: translate(-18rem, -16rem);
+  transform: translate(-18rem, -30rem);
 }
 
 .ProfilePicture2{
@@ -55,25 +44,30 @@ html {
   border-radius: 10px;
   position:relative;
   z-index: 2;
-  transform: translate(18rem, 14rem);
+  transform: translate(18rem);
 }
 
 /* ------------------------------------------laptop view------------------------------------------- */
 
 @media (max-width: 1000px) {
-  
+
+  .welcomeText{
+    margin: 3%;
+  }
+
   .aboutMeText{
     width: 15rem;
+    transform: translate(0, -12rem);
   }
   
   .ProfilePicture1{
     width: 18rem;
-    transform: translate(-13rem, -14rem);
+    transform: translate(-14rem, -24rem);
   }
   
   .ProfilePicture2{
     width: 18rem;
-    transform: translate(13rem, 14rem);
+    transform: translate(14rem);
   }
 }
 
@@ -81,27 +75,26 @@ html {
 
 @media (max-width: 768px) {
 
-  .homePage{
-    margin-bottom: 13rem;
-    padding-bottom: 5em;
-  }
-  .welcome{
+  .welcomeText{
     font-size: 2rem;
+    margin: 4%;
   }
+
   .aboutMeText{
-    width: 28rem;
+    width: 26rem;
     padding: 20px;
     font-size: 18px;
-    transform: translate(0rem, 8rem);
+    transform: translate(0rem, -2rem);
   }
+
   .ProfilePicture1{
     width: 20rem;
-    transform: translate(0rem, 6rem);
+    transform: translate(0rem, -4rem);
   }
 
   .ProfilePicture2{
     width: 20rem;
-    transform: translate(0rem, 10rem);
+    transform: translate(0rem, 0rem);
   }
 }
 
@@ -109,25 +102,25 @@ html {
 
 @media (max-width: 480px) {
 
-  .welcome{
-    font-size: 2em;
+  .welcomeText{
+    margin: 6%;
   }
 
   .aboutMeText{
     width: 18rem;
     font-size: 1rem;
     top: 1rem;
-    transform: translate(0rem, 9rem);
-  }
-
-  .ProfilePicture2{
-    width: 16rem;
-    transform: translate(0rem, 10rem);
+    transform: translate(0rem, -2rem);
   }
 
   .ProfilePicture1{
     width: 16rem;
-    transform: translate(0rem, 8rem);
+    transform: translate(0rem, -4rem);
+  }
+
+  .ProfilePicture2{
+    width: 16rem;
+    transform: translate(0rem, 0rem);
   }
 
 }
