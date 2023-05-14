@@ -16,7 +16,7 @@ html {
   font-size: 3rem;
   font-style: italic;
   min-height: 1.5em;
-  margin: 2%;
+  margin: 1%;
 }
 
 .aboutMeText{
@@ -37,6 +37,7 @@ html {
   position: relative;
   z-index: 2;
   transform: translate(-18rem, -30rem);
+  margin-bottom: -24em;
 }
 
 .ProfilePicture2{
@@ -63,6 +64,7 @@ html {
   .ProfilePicture1{
     width: 18rem;
     transform: translate(-14rem, -24rem);
+    margin-bottom: -18%;
   }
   
   .ProfilePicture2{
@@ -90,6 +92,7 @@ html {
   .ProfilePicture1{
     width: 20rem;
     transform: translate(0rem, -4rem);
+    margin-bottom: 14%;
   }
 
   .ProfilePicture2{

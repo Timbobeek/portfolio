@@ -59,9 +59,11 @@ const Projects = () => {
   }, []);
 
   return (
-  <div>
+    <div className='hobbiesPage'>
 
-    <span id='projectsTitle' className="projectsTitle"></span>
+    <div className="container-title">
+      <span id='projectsTitle' className="projectsTitle"></span>
+    </div>
 
     <div className="container">
       <div className="card" id='project1'>
