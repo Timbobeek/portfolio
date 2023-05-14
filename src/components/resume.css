@@ -1,9 +1,8 @@
 .resumeDiv{
     display: flex;
     justify-content: center;
-    align-content: center;
-    margin-top: 7rem;
-    font: inherit;
+    align-items: center;
+    flex-direction: column;
     font-size: 3rem;
 }
 
@@ -18,3 +17,30 @@
     color: aliceblue;
 }
 
+.resumeTitle{
+  display: flex;
+  justify-content: center;
+  margin: 1%;
+  font-size: 3rem;
+  font-style: italic;
+  min-height: 1.5em;
+}
+
+@media (max-width: 1000px) {
+    .resumeTitle{
+      margin: 3%;
+    }
+}
+
+@media (max-width: 768px) {
+    .resumeTitle{
+        margin: 4%;
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .resumeTitle{
+        margin: 6%;
+    }
+}

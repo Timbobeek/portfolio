@@ -3,35 +3,37 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 8% 8% 8%
+  /* margin-top: 0%; */
+  margin-right: 8%;
+  margin-left: 8%;
 }
 
 .hobbiesTitle{
   display: flex;
   justify-content: center;
-  margin-top: 5%;
-  margin-bottom: 5%;
+  margin: 1%;
   font-size: 3rem;
   font-style: italic;
+  min-height: 1.5em;
 }
 
  /* ----------------tablets and pc----------------- */
-
-@media (min-width: 769px){
-  
+ @media (min-width: 1001px) {
+ 
   .wrapper {
     font-size: 15px;
     position: relative;
     flex-grow: 1;
     margin: auto;
-    max-width: 1200px;
-    max-height: 1200px;
+    max-width: 1300px;
+    max-height: 1300px;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(4, 1fr);
     grid-gap: 1vmin;
     justify-items: center;
     align-items: center;
+    margin-bottom: 6em;
   }
   
   img {
@@ -83,31 +85,116 @@
   }
 
   #img2:hover{
-    transform: scale(1.5) translate(0, 20px);
+    /* transform: scale(1.5) translate(0, 20px); */
   }
-}
-
-/* ----------------tablet/laptop specific----------------- */
+ }
 
 @media (max-width: 1000px){
-  .wrapper{
+
+  .hobbiesTitle{
+    margin: 3%;
+  }
+
+  .wrapper {
+    position: relative;
+    flex-grow: 1;
+    margin: auto;
+    max-width: 1200px;
+    max-height: 1200px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 1vmin;
+    justify-items: center;
+    align-items: center;
+    /* margin-top: 15%; */
+    margin-top: 2em;
+    /* margin-bottom: 500px; */
+    margin-bottom: 60em;
     font-size: 10px;
   }
-}
+  
+  img {
+    max-width: 100%;
+    margin-bottom: -10px;
+    aspect-ratio: 1;
+  }
+  
+  .image {
+    z-index: 1;
+    grid-column: span 2;
+    max-width: 100%;
+    margin-bottom: -48%;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    transform: scale(1);
+    transition: all 0.25s;
+  }
+  
+  .image:nth-child(3n + 1) {
+    grid-column: 2 / span 2;
+  }
 
-@media (max-width: 768px){
-  .wrapper{
-    font-size: 7px;
+  .image:hover {
+    z-index: 2;
+    transform: scale(1.5);
+  }
+  
+  .image .description {
+    position: absolute;
+    display: none;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.7);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .image .description p{
+    width: 50%;
+    font-size: 10px;
+    text-align: center;
+  }
+  
+  .image:hover .description {
+    display: flex;
+  }
+
+  #img2:hover{
+    transform: scale(1.5) translate(20px);
+  }
+
+  #img3:hover{
+    transform: scale(1.5) translate(-20px);
+  }
+
+  #img5:hover{
+    transform: scale(1.5) translate(20px);
+  }
+
+  #img6:hover{
+    transform: scale(1.5) translate(-20px);
+  }
+
+  #img8:hover{
+    transform: scale(1.5) translate(20px);
+  }
+
+  #img9:hover{
+    transform: scale(1.5) translate(-20px);
   }
 }
-
 
  /* ----------------tablet/mobile----------------- */
 
 @media (max-width: 768px){
   
   .hobbiesTitle{
-    margin-top: 15%;
+    margin: 4%;
+    font-size: 2rem;
   }
 
   .wrapper {
@@ -122,8 +209,10 @@
     grid-gap: 1vmin;
     justify-items: center;
     align-items: center;
-    margin-top: 15%;
-    margin-bottom: 500px;
+    /* margin-top: 15%; */
+    /* margin-bottom: 500px; */
+    margin-bottom: 60em;
+    font-size: 7px;
   }
   
   img {
@@ -199,6 +288,13 @@
     transform: scale(1.5) translate(-20px);
   }
 
+}
+
+@media (max-width: 480px){
+  .hobbiesTitle{
+    margin: 6%;
+    font-size: 1.3rem;
+  }
 }
 
 
