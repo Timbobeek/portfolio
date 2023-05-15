@@ -11,7 +11,7 @@ import pool from '../images/hobbies/pool.jpg';
 import pubg from '../images/hobbies/pubg.jpg';
 import twitch from '../images/hobbies/twitch.png';
 
-var words = ['My Hobbies', 'Мои увлечения', 'Mis hobbies', 'Mої захоплення', 'Meine Hobbies', 'Իմ հետաքրքրությունները'],
+var words = ['My Hobbies', 'Мои увлечения', 'Mis hobbies', 'Mої захоплення', 'Meine Hobbies', 'Իմ հոբբիները'],
     part = '',
     i = 0,
     offset = 0,
