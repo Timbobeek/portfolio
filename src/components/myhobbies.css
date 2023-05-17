@@ -3,7 +3,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* margin-top: 0%; */
   margin-right: 8%;
   margin-left: 8%;
 }
@@ -17,7 +16,22 @@
   min-height: 1.5em;
 }
 
- /* ----------------tablets and pc----------------- */
+.image .description{
+  position: absolute;
+  display: none;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  color: beige;
+  background: rgba(0, 0, 0, 0.7);
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+ /* ---------------------desktop----------------------- */
+
  @media (min-width: 1001px) {
  
   .wrapper {
@@ -60,20 +74,6 @@
       z-index: 2;
       transform: scale(1.5);
     }
-  
-  .image .description {
-    position: absolute;
-    display: none;
-    height: 100%;
-    width: 100%;
-    top: 0px;
-    left: 0px;
-    color: #ffffff;
-    background: rgba(0, 0, 0, 0.7);
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
 
   .image .description p{
     width: 50%;
@@ -93,6 +93,8 @@
   }
  }
 
+/* ---------------------laptop----------------------- */
+
 @media (max-width: 1000px){
 
   .hobbiesTitle{
@@ -111,11 +113,9 @@
     grid-gap: 1vmin;
     justify-items: center;
     align-items: center;
-    /* margin-top: 15%; */
     margin-top: 2em;
-    /* margin-bottom: 500px; */
     margin-bottom: 60em;
-    font-size: 10px;  /* why is this here??? */
+    font-size: 10px; 
   }
   
   img {
@@ -141,20 +141,6 @@
   .image:hover {
     z-index: 2;
     transform: scale(1.5);
-  }
-  
-  .image .description {
-    position: absolute;
-    display: none;
-    height: 100%;
-    width: 100%;
-    top: 0px;
-    left: 0px;
-    color: #ffffff;
-    background: rgba(0, 0, 0, 0.7);
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
   }
 
   .image .description p{
@@ -217,8 +203,6 @@
     grid-gap: 1vmin;
     justify-items: center;
     align-items: center;
-    /* margin-top: 15%; */
-    /* margin-bottom: 500px; */
     margin-bottom: 60em;
     font-size: 7px;
   }
@@ -246,20 +230,6 @@
   .image:hover {
     z-index: 2;
     transform: scale(1.5);
-  }
-  
-  .image .description {
-    position: absolute;
-    display: none;
-    height: 100%;
-    width: 100%;
-    top: 0px;
-    left: 0px;
-    color: #ffffff;
-    background: rgba(0, 0, 0, 0.7);
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
   }
 
   .image .description p{
@@ -300,6 +270,8 @@
     transform: scale(1.5) translate(0, -40px);
   }
 }
+
+ /* --------------------------mobile--------------------------- */
 
 @media (max-width: 480px){
   .hobbiesTitle{

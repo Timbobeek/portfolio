@@ -5,16 +5,10 @@ header {
     justify-content: center;
     align-items: center;
     background-color: #EDDFB3;
-    width: auto;
 }
 
 .header-left{
   width: 400px;
-}
-
-.header-left a {
-    text-decoration: none;
-    color: inherit;
 }
 
 .menuOption{
@@ -227,7 +221,7 @@ header {
     }
 
     .small-screen-menu #myLinks a {
-      color: black;
+      color: #EDDFB3;
       padding: 14px 16px;
       text-decoration: none;
       font-size: 17px;
@@ -237,17 +231,15 @@ header {
 
     .small-screen-menu #myLinks a:hover{
       background-color: #EDDFB3;
+      color: brown;
     }
     
-    /* Style the hamburger menu */
     .burger a.icon {
       display: flex;
       position: relative;
     }
     
-    /* Add a grey background color on mouse-over */
     .burger a:hover {
       color: brown;
     }
-
   }

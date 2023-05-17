@@ -1,6 +1,6 @@
 footer {
-    height: 21px;
-    padding: 20px;
+    height: 41px;
+    padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,6 +9,10 @@ footer {
     bottom: 0;
     left: 0;
     right: 0;
+}
+
+.footer-left {
+    height: 100%;
 }
 
 .footer-left{
@@ -42,8 +46,13 @@ footer {
 /* ------------------------------------------laptop view------------------------------------------- */
 
 @media (max-width: 1000px){
+    footer{
+        height: 40px;
+        padding: 20px;
+    }
+
     .footer-left{
-        width:300px;
+        width: 300px;
     }
 }
 
@@ -52,7 +61,6 @@ footer {
 @media (max-width: 768px){
     footer{
         flex-direction: column-reverse;
-        height: 40px;
     }
 
     .footer-left{
@@ -72,5 +80,6 @@ footer {
 
     .footer-left{
         width: 180px;
+        margin-top: 0;
     }
 }

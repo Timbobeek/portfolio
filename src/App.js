@@ -4,7 +4,7 @@ import homeface2 from './images/homeface2.jpg'
 import homeface1 from './images/homeface1.jpg'
 
 
-var words = ['Welcome', 'Добро пожаловать', 'Bienvenido', 'Ласкаво просимо', 'Willkommen', 'Բարի գալուստ'],
+let words = ['Welcome', 'Добро пожаловать', 'Bienvenido', 'Ласкаво просимо', 'Willkommen', 'Բարի գալուստ'],
     part = '',
     i = 0,
     offset = 0,
@@ -44,9 +44,9 @@ var words = ['Welcome', 'Добро пожаловать', 'Bienvenido', 'Лас
       }
     }
 
-    const effectivePart = part ? part : "&nbsp;"
+    // const effectivePart = part ? part : "&nbsp;"
 
-    document.getElementById('welcomeText').innerHTML = effectivePart;
+    // document.getElementById('welcomeText').innerHTML = effectivePart;
   }
 
 const App = () => {
@@ -54,6 +54,8 @@ const App = () => {
   React.useEffect(() => {
     const interval = setInterval(() => {
       setText();
+      const effectivePart = part ? part : "&nbsp;";
+      document.getElementById('welcomeText').innerHTML = effectivePart;
     }, speed);
   
     return () => {
