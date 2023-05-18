@@ -1,34 +1,67 @@
-import React from 'react';
+const cache = {};
 
-function setText() {
-    if (forwards) {
-      if (offset >= words[i].length) {
-        ++skip_count;
-        if (skip_count == skip_delay) {
-          forwards = false;
-          skip_count = 0;
-        }
+function addOrGetCache(elementName, words) {
+  const key = `${elementName}:${words.length}`;
+
+  if (Object.keys(cache).indexOf(key) >= 0) {
+    return cache[key];
+  }
+
+  const entry = {
+    part: "",
+    i: 0,
+    offset: 0,
+    forwards: true,
+    skip_count: 0,
+    skip_delay: 15,
+  };
+
+  cache[key] = entry;
+  return entry;
+}
+
+function setText(elementName, words) {
+  const len = words.length;
+
+  const entry = addOrGetCache(elementName, words);
+
+  if (entry.forwards) {
+    if (entry.offset >= words[entry.i].length) {
+      ++entry.skip_count;
+      if (entry.skip_count === entry.skip_delay) {
+        entry.forwards = false;
+        entry.skip_count = 0;
       }
     }
-    else {
-      if (offset == 0) {
-        forwards = true;
-        i++;
-        offset = 0;
-        if (i >= len) {
-          i = 0;
-        }
-      }
-    }
-    part = words[i].substr(0, offset);
-    if (skip_count == 0) {
-      if (forwards) {
-        offset++;
-      }
-      else {
-        offset--;
+  } else {
+    if (entry.offset === 0) {
+      entry.forwards = true;
+      entry.i++;
+      entry.offset = 0;
+      if (entry.i >= len) {
+        entry.i = 0;
       }
     }
   }
+  entry.part = words[entry.i].substr(0, entry.offset);
+  if (entry.skip_count === 0) {
+    if (entry.forwards) {
+      entry.offset++;
+    } else {
+      entry.offset--;
+    }
+  }
 
-  export default setText;
+  const effectivePart = entry.part ? entry.part : "&nbsp;";
+
+  document.getElementById(elementName).innerHTML = effectivePart;
+}
+
+function setAnimationInterval(elementName, words) {
+  const speed = 70;
+  return setInterval(() => {
+    setText(elementName, words);
+  }, speed);
+}
+
+export default setAnimationInterval;
