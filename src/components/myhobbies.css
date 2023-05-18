@@ -1,4 +1,3 @@
-
 .hobbiesPage {
   display: flex;
   flex-direction: column;
@@ -7,7 +6,7 @@
   margin-left: 8%;
 }
 
-.hobbiesTitle{
+.hobbiesTitle {
   display: flex;
   justify-content: center;
   margin: 1%;
@@ -16,7 +15,7 @@
   min-height: 1.5em;
 }
 
-.image .description{
+.image .description {
   position: absolute;
   display: none;
   height: 100%;
@@ -30,10 +29,9 @@
   flex-direction: column;
 }
 
- /* ---------------------desktop----------------------- */
+/* ---------------------desktop----------------------- */
 
- @media (min-width: 1001px) {
- 
+@media (min-width: 1001px) {
   .wrapper {
     font-size: 15px;
     position: relative;
@@ -49,13 +47,13 @@
     align-items: center;
     margin-bottom: 6em;
   }
-  
+
   img {
     max-width: 100%;
     margin-bottom: -10px;
     aspect-ratio: 1;
   }
-  
+
   .image {
     z-index: 1;
     grid-column: span 2;
@@ -65,39 +63,40 @@
     transform: scale(1);
     transition: all 0.25s;
   }
-  
+
   .image:nth-child(7n + 1) {
     grid-column: 2 / span 2;
   }
 
   .image:hover {
-      z-index: 2;
-      transform: scale(1.5);
-    }
+    z-index: 2;
+    transform: scale(1.5);
+  }
 
-  .image .description p{
+  .image .description p {
     width: 50%;
     text-align: center;
   }
-  
+
   .image:hover .description {
     display: flex;
   }
 
-  #img2:hover{
+  #img2:hover {
     transform: scale(1.5) translate(0, 40px);
   }
 
-  #img8:hover, #img9:hover, #img10:hover{
+  #img8:hover,
+  #img9:hover,
+  #img10:hover {
     transform: scale(1.5) translate(0, -40px);
   }
- }
+}
 
 /* ---------------------laptop----------------------- */
 
-@media (max-width: 1000px){
-
-  .hobbiesTitle{
+@media (max-width: 1000px) {
+  .hobbiesTitle {
     margin: 3%;
   }
 
@@ -115,15 +114,15 @@
     align-items: center;
     margin-top: 2em;
     margin-bottom: 60em;
-    font-size: 10px; 
+    font-size: 10px;
   }
-  
+
   img {
     max-width: 100%;
     margin-bottom: -10px;
     aspect-ratio: 1;
   }
-  
+
   .image {
     z-index: 1;
     grid-column: span 2;
@@ -133,7 +132,7 @@
     transform: scale(1);
     transition: all 0.25s;
   }
-  
+
   .image:nth-child(3n + 1) {
     grid-column: 2 / span 2;
   }
@@ -143,50 +142,49 @@
     transform: scale(1.5);
   }
 
-  .image .description p{
+  .image .description p {
     width: 50%;
     font-size: 20px;
     text-align: center;
   }
-  
+
   .image:hover .description {
     display: flex;
   }
 
-  #img1:hover{
+  #img1:hover {
     transform: scale(1.5) translate(0, 40px);
   }
 
-  #img2:hover{
+  #img2:hover {
     transform: scale(1.5) translate(20px);
   }
 
-  #img3:hover{
+  #img3:hover {
     transform: scale(1.5) translate(-20px);
   }
 
-  #img5:hover{
+  #img5:hover {
     transform: scale(1.5) translate(20px);
   }
 
-  #img6:hover{
+  #img6:hover {
     transform: scale(1.5) translate(-20px);
   }
 
-  #img8:hover{
+  #img8:hover {
     transform: scale(1.5) translate(20px);
   }
 
-  #img9:hover{
+  #img9:hover {
     transform: scale(1.5) translate(-20px);
   }
 }
 
- /* ----------------tablet/mobile----------------- */
+/* ----------------tablet/mobile----------------- */
 
-@media (max-width: 768px){
-  
-  .hobbiesTitle{
+@media (max-width: 768px) {
+  .hobbiesTitle {
     margin: 4%;
     font-size: 2rem;
   }
@@ -206,13 +204,13 @@
     margin-bottom: 60em;
     font-size: 7px;
   }
-  
+
   img {
     max-width: 100%;
     margin-bottom: -10px;
     aspect-ratio: 1;
   }
-  
+
   .image {
     z-index: 1;
     grid-column: span 2;
@@ -222,7 +220,7 @@
     transform: scale(1);
     transition: all 0.25s;
   }
-  
+
   .image:nth-child(3n + 1) {
     grid-column: 2 / span 2;
   }
@@ -232,55 +230,50 @@
     transform: scale(1.5);
   }
 
-  .image .description p{
+  .image .description p {
     width: 50%;
     font-size: 10px;
     text-align: center;
   }
-  
+
   .image:hover .description {
     display: flex;
   }
 
-  #img2:hover{
+  #img2:hover {
     transform: scale(1.5) translate(20px);
   }
 
-  #img3:hover{
+  #img3:hover {
     transform: scale(1.5) translate(-20px);
   }
 
-  #img5:hover{
+  #img5:hover {
     transform: scale(1.5) translate(20px);
   }
 
-  #img6:hover{
+  #img6:hover {
     transform: scale(1.5) translate(-20px);
   }
 
-  #img8:hover{
+  #img8:hover {
     transform: scale(1.5) translate(20px);
   }
 
-  #img9:hover{
+  #img9:hover {
     transform: scale(1.5) translate(-20px);
   }
 
-  #img10:hover{
+  #img10:hover {
     transform: scale(1.5) translate(0, -40px);
   }
 }
 
- /* --------------------------mobile--------------------------- */
+/* --------------------------mobile--------------------------- */
 
-@media (max-width: 480px){
-  .hobbiesTitle{
+@media (max-width: 480px) {
+  .hobbiesTitle {
     margin: 6%;
     font-size: 2rem;
   }
 }
-
-
-
-
-

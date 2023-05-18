@@ -108,7 +108,7 @@
   background: rgba(237, 223, 179, 0.9);
 }
 
-.projectsTitle{
+.projectsTitle {
   display: flex;
   justify-content: center;
   font-size: 3rem;
@@ -203,7 +203,6 @@
 /* ------------------------------------------------------laptop----------------------------------------------- */
 
 @media (min-width: 769px) and (max-width: 1000px) {
-
   .container {
     width: 90%;
     height: 700px;
@@ -268,17 +267,11 @@
   .container .card:hover .p3 {
     display: block;
   }
-
-  .projectsTitle{
-    font-size: 2rem;
-  }
-
 }
 
 /* ----------------------------------------------------------------tablet--------------------------------------------------- */
 
 @media (min-width: 481px) and (max-width: 768px) {
-
   .container {
     width: 90%;
     height: 500px;
@@ -344,7 +337,7 @@
     display: block;
   }
 
-  .projectsTitle{
+  .projectsTitle {
     font-size: 2rem;
   }
 }
@@ -352,7 +345,6 @@
 /* ------------------------------------------------------mobile----------------------------------------------- */
 
 @media (max-width: 480px) {
-
   .container {
     width: 90%;
     height: 500px;
@@ -420,7 +412,7 @@
     display: block;
   }
 
-  .projectsTitle{
+  .projectsTitle {
     font-size: 2rem;
   }
 }
