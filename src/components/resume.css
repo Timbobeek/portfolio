@@ -26,9 +26,27 @@
   min-height: 1.5em;
 }
 
+.contactMe{
+  display: flex;
+  justify-content: center;
+  margin: 1%;
+  margin-top: 10%;
+  font-size: 3rem;
+  font-style: italic;
+  min-height: 1.5em;
+}
+
+.email{
+  color: brown;
+}
+
 @media (max-width: 1000px) {
   .resumeTitle {
     margin: 3%;
+  }
+
+  .contactMe{
+    font-size: 2rem;
   }
 }
 
@@ -37,10 +55,26 @@
     margin: 4%;
     font-size: 2rem;
   }
+
+  .contactMe{
+    font-size: 1.2rem;
+  }
+
+  .email{
+    font-size: 2rem;
+  }
 }
 
 @media (max-width: 480px) {
   .resumeTitle {
     margin: 6%;
+  }
+
+  .contactMe{
+    font-size: 1.2rem;
+  }
+
+  .email{
+    font-size: 1.5rem;
   }
 }
