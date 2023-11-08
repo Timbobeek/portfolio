@@ -24,7 +24,7 @@ const Projects = () => {
         <span id="projectsTitle" className="projectsTitle"></span>
       </div>
 
-      <div className="container">
+      {/* <div className="container">
         <div className="card" id="project1">
           <div className="card__head">
             <div className="p1">Data Persistence Project</div>
@@ -41,6 +41,35 @@ const Projects = () => {
               GitHub Repository
             </a>
           </div>
+        </div> */}
+
+    <div className="container">
+        <div className="card" id="project1">
+          <div className="card__head">
+            <div className="p1">Psychotherapist Website</div>
+            <div className="p3">
+              This project has two pieces: a website written in TypeScript 
+              and a Content Management System page that allows the page owner to edit all of the content on the website in real time using Sanity. 
+            </div>
+            <div className="projectLinks">
+              <a
+                href="https://github.com/connorspeers/chamisa"
+                className="p2"
+                target="_blank"
+                rel="noreferrer"
+              >
+                GitHub
+              </a>
+              <a
+                href="https://chamisamackenzielmsw.com/"
+                className="p2"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Website 
+              </a>
+            </div>
+          </div>
         </div>
 
         <div className="card" id="project2">
@@ -56,7 +85,7 @@ const Projects = () => {
               target="_blank"
               rel="noreferrer"
             >
-              GitHub Repository
+              GitHub
             </a>
           </div>
         </div>
@@ -67,16 +96,26 @@ const Projects = () => {
             <div className="p3">
               I designed most of this Amazon/Ebay/Craigslist mock and was
               responsible for the home and listings pages. Also done at
-              BloomTech, my first serious group project!
+              BloomTech, my first serious JavaScript group project!
             </div>
-            <a
-              href="https://github.com/african-marketplace-dec2021/frontend"
-              className="p2"
-              target="_blank"
-              rel="noreferrer"
-            >
-              GitHub Repository
-            </a>
+            <div className="projectLinks">
+              <a
+                href="https://github.com/african-marketplace-dec2021/frontend"
+                className="p2"
+                target="_blank"
+                rel="noreferrer"
+              >
+                GitHub
+              </a>
+              <a
+                href="https://frontend-nine-flame.vercel.app/"
+                className="p2"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Website 
+              </a>
+            </div>
           </div>
         </div>
 
@@ -84,22 +123,32 @@ const Projects = () => {
           <div className="card__head">
             <div className="p1">Mock Recipe Website</div>
             <div className="p3">
-              A web page made for saving recipes online, where I worked on (you
+              A JavaScript web page made for saving recipes online, where I worked on (you
               guessed it!) the component responsible for saving recipes on the
               site.
             </div>
-            <a
-              href="https://github.com/Build-Week-Secret-Family-Recipes-01/front-end"
-              className="p2"
-              target="_blank"
-              rel="noreferrer"
-            >
-              GitHub Repository
-            </a>
+            <div className="projectLinks">
+              <a
+                href="https://github.com/Build-Week-Secret-Family-Recipes-01/front-end"
+                className="p2"
+                target="_blank"
+                rel="noreferrer"
+              >
+                GitHub
+              </a>
+              <a
+                href="https://recipesfr.vercel.app/"
+                className="p2"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Website 
+              </a>
+            </div>
           </div>
         </div>
 
-        <div className="card" id="project5">
+        {/* <div className="card" id="project5">
           <div className="card__head">
             <div className="p1">A Registration Page</div>
             <div className="p3">
@@ -115,7 +164,37 @@ const Projects = () => {
               GitHub Repository
             </a>
           </div>
+        </div> */}
+
+        <div className="card" id="project5">
+          <div className="card__head">
+            <div className="p1">WeTranslate Page</div>
+            <div className="p3">
+              My personal work-in-progress project: a page with translations of song lyrics 
+              and other forms of art. Typescript + Sanity again.
+            </div>
+            <div className="projectLinks">
+              <a
+                href="https://github.com/Timbobeek/PerevodSite"
+                className="p2"
+                target="_blank"
+                rel="noreferrer"
+              >
+                GitHub
+              </a>
+              <a
+                href="https://recipesfr.vercel.app/"
+                // add website link and picture
+                className="p2"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Website 
+              </a>
+            </div>
+          </div>
         </div>
+
       </div>
     </div>
   );

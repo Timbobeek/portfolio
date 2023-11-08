@@ -58,8 +58,12 @@
   animation: alpha-transition 2s;
 }
 
-.container .card#project1 {
+/* .container .card#project1 {
   background-image: var(--image-filter-layer), url("../images/projects/sql.png");
+} */
+
+.container .card#project1 {
+  background-image: var(--image-filter-layer), url("../images/projects/chamisa.png");
 }
 
 .container .card#project2 {
@@ -114,6 +118,16 @@
   font-size: 3rem;
   font-style: italic;
   min-height: 1.5em;
+}
+
+.projectLinks {
+  display: flex;
+  justify-content: center;
+}
+
+.projectLinks .p2{
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 /* ---------------------------------------------------------------------desktop---------------------------------------------------------------- */
@@ -266,6 +280,10 @@
   .container .card:hover .p2,
   .container .card:hover .p3 {
     display: block;
+  }
+
+  .projectLinks {
+    display: flex;
   }
 }
 
