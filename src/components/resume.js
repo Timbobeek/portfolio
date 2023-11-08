@@ -42,7 +42,6 @@ const Resume = () => {
         Resume
       </span>
       <span className="email">tim.goloschapov@gmail.com</span>
-
     </div>
   );
 };
