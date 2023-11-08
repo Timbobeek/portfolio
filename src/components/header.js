@@ -34,7 +34,7 @@ const Header = () => {
           <Link to="projects">Projects</Link>
         </div>
         <div className="menuOption">
-          <Link to="resume">Resume</Link>
+          <Link to="contacts">Contacts</Link>
         </div>
         <div className="menuOption">
           <Link to="hobbies">My Hobbies</Link>
@@ -51,7 +51,7 @@ const Header = () => {
         <div id="myLinks">
           <a href="/">Home</a>
           <a href="/projects">Projects</a>
-          <a href="/resume">Resume</a>
+          <a href="/contacts">Contacts</a>
           <a href="/hobbies">My Hobbies</a>
         </div>
       </div>
