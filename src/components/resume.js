@@ -1,6 +1,7 @@
 import React from "react";
 import "./resume.css";
 import setAnimationInterval from "./headAnimation";
+import { Link } from "react-router-dom";
 
 const Resume = () => {
   React.useEffect(() => {
@@ -41,7 +42,7 @@ const Resume = () => {
       <span id="contactMe" className="contactMe">
         Resume
       </span>
-      <span className="email">tim.goloschapov@gmail.com</span>
+      <a className="email" href="mailto:tim.goloschapov@gmail.com">tim.goloschapov@gmail.com</a>
     </div>
   );
 };

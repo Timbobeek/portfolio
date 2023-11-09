@@ -51,15 +51,6 @@ const Projects = () => {
               This project has two pieces: a website written in TypeScript 
               and a Content Management System page that allows the page owner to edit all of the content on the website in real time using Sanity. 
             </div>
-            <div className="projectLinks">
-              <a
-                href="https://github.com/connorspeers/chamisa"
-                className="p2"
-                target="_blank"
-                rel="noreferrer"
-              >
-                GitHub
-              </a>
               <a
                 href="https://chamisamackenzielmsw.com/"
                 className="p2"
@@ -68,7 +59,6 @@ const Projects = () => {
               >
                 Website 
               </a>
-            </div>
           </div>
         </div>
 
@@ -183,8 +173,7 @@ const Projects = () => {
                 GitHub
               </a>
               <a
-                href="https://recipesfr.vercel.app/"
-                // add website link and picture
+                href="https://we-translate.vercel.app/"
                 className="p2"
                 target="_blank"
                 rel="noreferrer"

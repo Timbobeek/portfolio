@@ -83,7 +83,7 @@
 
 .container .card#project5 {
   background-image: var(--image-filter-layer),
-    url("../images/projects/registration.png");
+    url("../images/projects/wetranslate.png");
 }
 
 .container .card .card__head {
