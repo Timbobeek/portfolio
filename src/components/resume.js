@@ -1,12 +1,12 @@
 import React from "react";
 import "./resume.css";
 import setAnimationInterval from "./headAnimation";
+import flyer from "../images/flyer.png"
 import { Link } from "react-router-dom";
 
 function popupTrigger() {
   var popup = document.getElementById("myPopup");
   popup.classList.toggle("show");
-  console.log('ddddddddddddddddddd')
 }
 
 const Resume = () => {
@@ -51,7 +51,7 @@ const Resume = () => {
       <a className="email" href="mailto:tim.goloschapov@gmail.com">tim.goloschapov@gmail.com</a>
 
       <div class="popup" onClick={popupTrigger}>Click me!
-        <span class="popuptext" id="myPopup">Popup text...</span>
+        <span class="popuptext" id="myPopup"><img className="flyer" src={flyer} alt="flyer"/></span>
       </div>
     </div>
   );
