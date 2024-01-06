@@ -3,6 +3,12 @@ import "./resume.css";
 import setAnimationInterval from "./headAnimation";
 import { Link } from "react-router-dom";
 
+function popupTrigger() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+  console.log('ddddddddddddddddddd')
+}
+
 const Resume = () => {
   React.useEffect(() => {
     const interval = setAnimationInterval("resumeTitle", [
@@ -43,6 +49,10 @@ const Resume = () => {
         Resume
       </span>
       <a className="email" href="mailto:tim.goloschapov@gmail.com">tim.goloschapov@gmail.com</a>
+
+      <div class="popup" onClick={popupTrigger}>Click me!
+        <span class="popuptext" id="myPopup">Popup text...</span>
+      </div>
     </div>
   );
 };
