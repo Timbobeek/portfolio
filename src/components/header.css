@@ -13,6 +13,12 @@ header {
 
 .menuOption {
   width: 100px;
+  text-align: center;
+}
+
+.hire{
+  color: brown;
+  font-weight: bold;
 }
 
 .header-right {
@@ -36,6 +42,10 @@ header {
 .small-screen-menu {
   display: none;
 }
+
+/*------------------flyer----------------*/
+
+
 
 /*------------------fancy hover effect----------------*/
 

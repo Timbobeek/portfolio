@@ -2,6 +2,20 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./header.css";
 
+const modal = document.querySelector("#modal");
+const openModal = document.querySelector("#openModal");
+const closeModal = document.querySelector("#closeModal");
+
+if (modal) {
+  openModal &&
+    openModal.addEventListener("click", () => modal.showModal());
+    console.log('hhhhh')
+
+  closeModal &&
+    closeModal.addEventListener("click", () => modal.close());
+}
+
+
 function myFunction() {
   var x = document.getElementById("myLinks");
   if (x.style.display === "block") {
@@ -39,6 +53,18 @@ const Header = () => {
         <div className="menuOption">
           <Link to="hobbies">My Hobbies</Link>
         </div>
+        {/* <div className="menuOption">
+          <p className="hire">Hire Me?</p>
+        </div> */}
+        <div className="menuOption">
+          <button id="openModal">Hire Me?</button>
+        </div>
+
+        <dialog id="modal" class="modal">
+          <button id="closeModal" class="modal-close-btn">Close</button>
+          <p>...</p>
+        </dialog>
+
       </div>
 
       <div className="small-screen-menu">

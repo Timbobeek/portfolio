@@ -38,6 +38,9 @@ const App = () => {
         </p>
       </div>
       <img className="ProfilePicture1" src={homeface1} alt="my profile pic" />
+      
+
+
     </div>
   );
 };
