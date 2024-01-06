@@ -75,6 +75,8 @@ dialog:-internal-dialog-in-top-layer::backdrop {
   font-weight: bold;
 }
 
+/* https://www.digitalocean.com/community/tutorials/how-to-use-opacity-and-transparency-to-create-a-modal-in-css */
+
 #closeModal{
   color: transparent;
   display: block;
@@ -99,6 +101,7 @@ dialog:-internal-dialog-in-top-layer::backdrop {
   background-color: #eddfb3;
   border: none;
   margin-bottom: 5px;
+  
 }
 
 
