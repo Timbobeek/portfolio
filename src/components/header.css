@@ -46,9 +46,6 @@ header {
 /*------------------flyer----------------*/
 
 .modal {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   position: relative;
   width: 30rem;
   height: 38rem;
