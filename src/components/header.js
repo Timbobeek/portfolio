@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./header.css";
+import flyer from "../images/flyer.png"
 
 const modal = document.querySelector("#modal");
 const openModal = document.querySelector("#openModal");
@@ -9,7 +10,7 @@ const closeModal = document.querySelector("#closeModal");
 if (modal) {
   openModal &&
     openModal.addEventListener("click", () => modal.showModal());
-    console.log('hhhhh')
+    console.log('ffffffffffg')
 
   closeModal &&
     closeModal.addEventListener("click", () => modal.close());
@@ -60,9 +61,9 @@ const Header = () => {
           <button id="openModal">Hire Me?</button>
         </div>
 
-        <dialog id="modal" class="modal">
-          <button id="closeModal" class="modal-close-btn">Close</button>
-          <p>...</p>
+        <dialog id="modal" className="modal">
+          <button id="closeModal" className="modal-close-btn">Close</button>
+          <img className="flyer" src={flyer} alt="flyer"/>
         </dialog>
 
       </div>

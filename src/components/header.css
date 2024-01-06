@@ -45,6 +45,64 @@ header {
 
 /*------------------flyer----------------*/
 
+.modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 30rem;
+  height: 38rem;
+  padding: 2rem;
+  border: 0;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.5rem 0.25rem hsl(0 0% 0% / 10%);
+  background: #eddfb3;
+}
+
+.flyer{
+  height: 36rem;
+}
+
+dialog:-internal-dialog-in-top-layer::backdrop {
+  background-color: black;
+  opacity: 30%;
+}
+
+
+/* change it to clickable text */
+#openModal{
+  color: brown;
+  background-color: #eddfb3;
+  padding: 10px;
+  border-radius: 30%;
+  font-weight: bold;
+}
+
+#closeModal{
+  color: transparent;
+  display: block;
+  height: 1.5rem;
+  width: 1.5rem;
+  overflow: hidden;
+  background-image:
+    linear-gradient(
+      to top right,
+      transparent 35%,
+      brown 48%,
+      brown 52%,
+      transparent 52%
+    ),
+    linear-gradient(
+      to top left,
+      transparent 35%,
+      brown 48%,
+      brown 52%,
+      transparent 52%
+    );
+  background-color: #eddfb3;
+  border: none;
+  margin-bottom: 5px;
+}
 
 
 /*------------------fancy hover effect----------------*/
