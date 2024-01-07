@@ -48,7 +48,7 @@ header {
 .modal {
   position: relative;
   width: 30rem;
-  height: 38rem;
+  height: 36rem;
   padding: 2rem;
   border: 0;
   border-radius: 0.5rem;
@@ -107,8 +107,9 @@ dialog:-internal-dialog-in-top-layer::backdrop {
     );
   background-color: #eddfb3;
   border: none;
-  margin-bottom: 5px;
-  float: right;
+  right: 0.3rem;
+  top: 0.3rem;
+  position: absolute;
 }
 
 

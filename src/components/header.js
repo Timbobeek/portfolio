@@ -58,11 +58,17 @@ const Header = () => {
           <Link to="hobbies">My Hobbies</Link>
         </div>
         <div className="menuOption">
-          <button id="openModal" onClick={() => setShowDialog(true)}>Hire Me?</button>
+          {/* <button id="openModal" onClick={() => setShowDialog(true)}>Hire Me?</button> */}
+          {/* <Link onClick={() => setShowDialog(true)}>Hire Me?</Link> */}
+          
+          {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+          <a href="#" onClick={() => setShowDialog(true)}>Hire Me?</a>
         </div>
 
-        <dialog id="modal" className="modal">
-          <button id="closeModal" onClick={() => setShowDialog(false)} className="modal-close-btn"/>
+        <dialog id="modal" className="modal" onClose={() => setShowDialog(false)}>
+          {/* <button id="closeModal" onClick={() => setShowDialog(false)} className="modal-close-btn"/> */}
+          {/* eslint-disable-next-line jsx-a11y/anchor-is-valid, jsx-a11y/anchor-has-content */}
+          <a id="closeModal" href="#" onClick={() => setShowDialog(false)} />
           <img className="flyer" src={flyer} alt="flyer"/>
         </dialog>
 
