@@ -1,20 +1,7 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./header.css";
 import flyer from "../images/flyer.png"
-
-const modal = document.querySelector("#modal");
-const openModal = document.querySelector("#openModal");
-const closeModal = document.querySelector("#closeModal");
-
-if (modal) {
-  openModal &&
-    openModal.addEventListener("click", () => modal.showModal());
-    console.log('ffffffffffg')
-
-  closeModal &&
-    closeModal.addEventListener("click", () => modal.close());
-}
 
 
 function myFunction() {
@@ -27,6 +14,22 @@ function myFunction() {
 }
 
 const Header = () => {
+  const [isDialogShown, setShowDialog] = useState(false);
+
+  useEffect(() => {
+    const dialog = document.querySelector("#modal");
+    if (!dialog) {
+      return
+    }
+
+    if (isDialogShown) {
+      dialog.showModal();
+    } else {
+      dialog.close();
+    }
+  }, [isDialogShown])
+
+  // console.log(modal)
   return (
     <header>
       <div className="header-left">
@@ -54,15 +57,12 @@ const Header = () => {
         <div className="menuOption">
           <Link to="hobbies">My Hobbies</Link>
         </div>
-        {/* <div className="menuOption">
-          <p className="hire">Hire Me?</p>
-        </div> */}
         <div className="menuOption">
-          <button id="openModal">Hire Me?</button>
+          <button id="openModal" onClick={() => setShowDialog(true)}>Hire Me?</button>
         </div>
 
         <dialog id="modal" className="modal">
-          <button id="closeModal" className="modal-close-btn">Close</button>
+          <button id="closeModal" onClick={() => setShowDialog(false)} className="modal-close-btn"/>
           <img className="flyer" src={flyer} alt="flyer"/>
         </dialog>
 

@@ -75,6 +75,13 @@ dialog:-internal-dialog-in-top-layer::backdrop {
   font-weight: bold;
 }
 
+#openModal:hover{
+  color: #eddfb3;
+  background-color: brown;
+}
+
+
+
 /* https://www.digitalocean.com/community/tutorials/how-to-use-opacity-and-transparency-to-create-a-modal-in-css */
 
 #closeModal{
@@ -86,22 +93,22 @@ dialog:-internal-dialog-in-top-layer::backdrop {
   background-image:
     linear-gradient(
       to top right,
-      transparent 35%,
-      brown 48%,
-      brown 52%,
+      transparent 46%,
+      black 46%,
+      black 54%,
       transparent 52%
     ),
     linear-gradient(
       to top left,
-      transparent 35%,
-      brown 48%,
-      brown 52%,
+      transparent 46%,
+      black 46%,
+      black 54%,
       transparent 52%
     );
   background-color: #eddfb3;
   border: none;
   margin-bottom: 5px;
-  
+  float: right;
 }
 
 
