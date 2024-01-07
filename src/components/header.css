@@ -13,6 +13,12 @@ header {
 
 .menuOption {
   width: 100px;
+  text-align: center;
+}
+
+.hire{
+  color: brown;
+  font-weight: bold;
 }
 
 .header-right {
@@ -36,6 +42,78 @@ header {
 .small-screen-menu {
   display: none;
 }
+
+/*------------------flyer----------------*/
+
+.modal {
+  position: relative;
+  padding: 2rem;
+  border: 0;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.5rem 0.25rem hsl(0 0% 0% / 10%);
+  background: #eddfb3;
+}
+
+#hireMe{
+  color: brown;
+}
+
+.flyer{
+  object-fit: scale-down;
+  height: 36rem;
+  width: 27.6rem;
+}
+
+dialog:-internal-dialog-in-top-layer::backdrop {
+  background-color: black;
+  opacity: 30%;
+}
+
+#openModal{
+  color: brown;
+  background-color: #eddfb3;
+  padding: 10px;
+  border-radius: 30%;
+  font-weight: bold;
+}
+
+#openModal:hover{
+  color: #eddfb3;
+  background-color: brown;
+}
+
+
+
+/* https://www.digitalocean.com/community/tutorials/how-to-use-opacity-and-transparency-to-create-a-modal-in-css */
+
+#closeModal{
+  color: transparent;
+  display: block;
+  height: 1.5rem;
+  width: 1.5rem;
+  overflow: hidden;
+  background-image:
+    linear-gradient(
+      to top right,
+      transparent 46%,
+      black 46%,
+      black 54%,
+      transparent 52%
+    ),
+    linear-gradient(
+      to top left,
+      transparent 46%,
+      black 46%,
+      black 54%,
+      transparent 52%
+    );
+  background-color: #eddfb3;
+  border: none;
+  right: 0.3rem;
+  top: 0.3rem;
+  position: absolute;
+}
+
 
 /*------------------fancy hover effect----------------*/
 
@@ -157,6 +235,17 @@ header {
   .row .right {
     margin-top: 16px;
   }
+
+  .modal {
+    width: 20rem;
+    height: 26rem;
+    padding: 2rem;
+  }
+  
+  .flyer{
+    height: 26rem;
+  }
+  
 }
 
 /* ------------------------------------------phone view------------------------------------------- */
@@ -178,8 +267,13 @@ header {
     width: 180px;
   }
 
+  /* this is causing the modal to not display */
   .header-right {
     display: none;
+  }
+
+  #hireMe:hover{
+    font-weight: bold;
   }
 
   .title {
@@ -232,5 +326,14 @@ header {
 
   .burger a:hover {
     color: brown;
+  }
+
+  .modal {
+    width: 18rem;
+    height: 24rem;
+  }
+  
+  .flyer{
+    height: 24rem;
   }
 }

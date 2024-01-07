@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./header.css";
+import flyer from "../images/flyer.png"
+
 
 function myFunction() {
   var x = document.getElementById("myLinks");
@@ -12,6 +14,21 @@ function myFunction() {
 }
 
 const Header = () => {
+  const [isDialogShown, setShowDialog] = useState(false);
+
+  useEffect(() => {
+    const dialog = document.querySelector("#modal");
+    if (!dialog) {
+      return
+    }
+
+    if (isDialogShown) {
+      dialog.showModal();
+    } else {
+      dialog.close();
+    }
+  }, [isDialogShown])
+
   return (
     <header>
       <div className="header-left">
@@ -39,10 +56,23 @@ const Header = () => {
         <div className="menuOption">
           <Link to="hobbies">My Hobbies</Link>
         </div>
+        <div className="menuOption">
+          {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+          <a href="#" id='hireMe' onClick={() => setShowDialog(true)}>Hire Me?</a>
+        </div>
       </div>
+
+      <dialog id="modal" className="modal" onClose={() => setShowDialog(false)}>
+          {/* <button id="closeModal" onClick={() => setShowDialog(false)} className="modal-close-btn"/> */}
+          {/* eslint-disable-next-line jsx-a11y/anchor-is-valid, jsx-a11y/anchor-has-content */}
+          <a id="closeModal" href="#" onClick={() => setShowDialog(false)} />
+          <img className="flyer" src={flyer} alt="flyer"/>
+      </dialog>
+      
 
       <div className="small-screen-menu">
         <div className="title">Timofey Goloshchapov</div>
+        <a href="#" id='hireMe' onClick={() => setShowDialog(true)}>Hire Me?</a>
         <div className="burger">
           <a href="#" className="icon" onClick={myFunction}>
             <i className="fa fa-bars fa-lg"></i>

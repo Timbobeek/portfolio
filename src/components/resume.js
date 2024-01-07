@@ -3,6 +3,7 @@ import "./resume.css";
 import setAnimationInterval from "./headAnimation";
 import { Link } from "react-router-dom";
 
+
 const Resume = () => {
   React.useEffect(() => {
     const interval = setAnimationInterval("resumeTitle", [
