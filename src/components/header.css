@@ -233,6 +233,17 @@ dialog:-internal-dialog-in-top-layer::backdrop {
   .row .right {
     margin-top: 16px;
   }
+
+  .modal {
+    width: 20rem;
+    height: 26rem;
+    padding: 2rem;
+  }
+  
+  .flyer{
+    height: 26rem;
+  }
+  
 }
 
 /* ------------------------------------------phone view------------------------------------------- */
