@@ -269,8 +269,13 @@ dialog:-internal-dialog-in-top-layer::backdrop {
     width: 180px;
   }
 
+  /* this is causing the modal to not display */
   .header-right {
     display: none;
+  }
+
+  #hireMe:hover{
+    font-weight: bold;
   }
 
   .title {
@@ -279,7 +284,7 @@ dialog:-internal-dialog-in-top-layer::backdrop {
     font-size: large;
   }
 
-  .burger {
+  /* .burger {
     display: flex;
     align-items: center;
     position: relative;
@@ -323,5 +328,5 @@ dialog:-internal-dialog-in-top-layer::backdrop {
 
   .burger a:hover {
     color: brown;
-  }
+  } */
 }
