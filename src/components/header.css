@@ -47,8 +47,6 @@ header {
 
 .modal {
   position: relative;
-  width: 30rem;
-  height: 36rem;
   padding: 2rem;
   border: 0;
   border-radius: 0.5rem;
@@ -61,7 +59,9 @@ header {
 }
 
 .flyer{
+  object-fit: scale-down;
   height: 36rem;
+  width: 27.6rem;
 }
 
 dialog:-internal-dialog-in-top-layer::backdrop {
@@ -69,8 +69,6 @@ dialog:-internal-dialog-in-top-layer::backdrop {
   opacity: 30%;
 }
 
-
-/* change it to clickable text */
 #openModal{
   color: brown;
   background-color: #eddfb3;
@@ -284,7 +282,7 @@ dialog:-internal-dialog-in-top-layer::backdrop {
     font-size: large;
   }
 
-  /* .burger {
+  .burger {
     display: flex;
     align-items: center;
     position: relative;
@@ -328,5 +326,14 @@ dialog:-internal-dialog-in-top-layer::backdrop {
 
   .burger a:hover {
     color: brown;
-  } */
+  }
+
+  .modal {
+    width: 18rem;
+    height: 24rem;
+  }
+  
+  .flyer{
+    height: 24rem;
+  }
 }

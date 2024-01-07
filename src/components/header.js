@@ -56,15 +56,10 @@ const Header = () => {
         <div className="menuOption">
           <Link to="hobbies">My Hobbies</Link>
         </div>
-        
         <div className="menuOption">
-          {/* <button id="openModal" onClick={() => setShowDialog(true)}>Hire Me?</button> */}
-          {/* <Link onClick={() => setShowDialog(true)}>Hire Me?</Link> */}
-          
           {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
           <a href="#" id='hireMe' onClick={() => setShowDialog(true)}>Hire Me?</a>
         </div>
-
       </div>
 
       <dialog id="modal" className="modal" onClose={() => setShowDialog(false)}>
@@ -77,7 +72,8 @@ const Header = () => {
 
       <div className="small-screen-menu">
         <div className="title">Timofey Goloshchapov</div>
-        {/* <div className="burger">
+        <a href="#" id='hireMe' onClick={() => setShowDialog(true)}>Hire Me?</a>
+        <div className="burger">
           <a href="#" className="icon" onClick={myFunction}>
             <i className="fa fa-bars fa-lg"></i>
           </a>
@@ -87,9 +83,7 @@ const Header = () => {
           <a href="/projects">Projects</a>
           <a href="/contacts">Contacts</a>
           <a href="/hobbies">My Hobbies</a>
-        </div> */}
-
-        <a href="#" id='hireMe' onClick={() => setShowDialog(true)}>Hire Me?</a>
+        </div>
       </div>
     </header>
   );
