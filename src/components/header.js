@@ -29,7 +29,6 @@ const Header = () => {
     }
   }, [isDialogShown])
 
-  // console.log(modal)
   return (
     <header>
       <div className="header-left">
@@ -62,7 +61,7 @@ const Header = () => {
           {/* <Link onClick={() => setShowDialog(true)}>Hire Me?</Link> */}
           
           {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-          <a href="#" onClick={() => setShowDialog(true)}>Hire Me?</a>
+          <a href="#" id='hireMe' onClick={() => setShowDialog(true)}>Hire Me?</a>
         </div>
 
         <dialog id="modal" className="modal" onClose={() => setShowDialog(false)}>
@@ -76,6 +75,7 @@ const Header = () => {
 
       <div className="small-screen-menu">
         <div className="title">Timofey Goloshchapov</div>
+
         <div className="burger">
           <a href="#" className="icon" onClick={myFunction}>
             <i className="fa fa-bars fa-lg"></i>
