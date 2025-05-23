@@ -3,7 +3,7 @@ footer {
   padding: 10px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   background-color: #eddfb3;
   position: absolute;
   bottom: 0;
@@ -46,14 +46,14 @@ footer {
 /* ------------------------------------------laptop view------------------------------------------- */
 
 @media (max-width: 1000px) {
-  footer {
+  /* footer {
     height: 40px;
     padding: 20px;
   }
 
   .footer-left {
     width: 300px;
-  }
+  } */
 }
 
 /* ------------------------------------------tablet view------------------------------------------- */

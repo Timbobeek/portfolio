@@ -1,7 +1,6 @@
 import React from "react";
 import "./App.css";
-import homeface2 from "./images/homeface2.jpg";
-import homeface1 from "./images/homeface1.jpg";
+import homeface from './images/homeface.jpg';
 import setAnimationInterval from "./components/headAnimation";
 
 const App = () => {
@@ -12,7 +11,7 @@ const App = () => {
       "Bienvenido",
       "Ласкаво просимо",
       "Willkommen",
-      "Բարի գալուստ",
+      // "Բարի գալուստ",
     ]);
 
     return () => {
@@ -22,27 +21,29 @@ const App = () => {
 
   return (
     <div className="homePage">
-      <div id="welcomeText" className="welcomeText"></div>
-      <img className="ProfilePicture2" src={homeface2} alt="my profile pic2" />
-      <div className="aboutMeText">
-        <p>
-          Hi! I am a 𝐅𝐮𝐥𝐥 𝐒𝐭𝐚𝐜𝐤 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫, with recent project accomplishments
-          where I contributed to full stack component builds using RESTful APIs,
-          JWT token authentication, and Jest testing to deliver responsive and
-          interactive applications. I have experience with UI/UX design creation
-          and solution integrations where I provided aesthetically pleasing
-          design elements with responsive functionality. Additionally, I have
-          optimized front end website features utilizing Styled Components, Js,
-          CSS, HTML, Figma, Ant-Design, Yup, and more to improve site navigation
-          and user experience.
-        </p>
-      </div>
-      <img className="ProfilePicture1" src={homeface1} alt="my profile pic" />
+       <div id="welcomeText" className="welcomeText"></div>
       
+       <div className="topHalf">
+         <img className="homeImage" src={homeface} alt="my profile pic2" />
+         <div className="bigTextHome">Hi</div>
+       </div>
 
 
-    </div>
+        <div className="bottomHalf">
+         <div className="bottomHalfLeft">This is my first website</div>
+         <div className="bottomHalfRight">
+             My name is Tim and I am a Full Stack Developer with a degree in Psychology and Sociology and years of experience as a manager at a movie theatre
+             and this is my first self-made website. Just a few years ago this was unimaginable.
+             I did not dream of ANY of these as a kid, to be quite frank, but that's the fun part of life! I have tried various professions,
+             but software engineering is the first one where I enjoy the process, the result, and see my place in it. I equally enjoy fixing
+         </div>
+        </div>
+     </div>
   );
 };
 
 export default App;
+
+// As a kid, I did not dream of doing any of the things mentioned, but life works in mysterious ways. In the spring of 2020, just like many, 
+// I worked, what turned out to be the last shift at my part-time job and was faced with a question: What's next? And then another one: What do I want to do?
+// I have tried tutoring English, interpreting, and even considered monitoring school bus cameras (crazy to think).

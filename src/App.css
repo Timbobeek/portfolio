@@ -13,55 +13,50 @@ html {
   font-size: 3rem;
   font-style: italic;
   min-height: 1.5em;
-  margin: 1%;
+  margin: 1rem;
 }
 
-.aboutMeText {
+.topHalf{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.bigTextHome{
+  font-size: 20em;
+}
+
+.homeImage{
+  width: 20em;
+  border-radius: 10px;
+}
+
+.bottomHalf{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: end;
+  transform: translate(0, -5rem);
+}
+
+.bottomHalfLeft{
+  width: 5em;
+  font-size: 2.5em;
+  transform: translate(2rem, -2rem);
+}
+
+.bottomHalfRight{
+  width: 20em;
   text-align: center;
   background-color: white;
-  width: 20rem;
   padding: 20px;
-  z-index: 2;
   border-radius: 10px;
-  transform: translate(0, -15rem);
-}
-
-.ProfilePicture1 {
-  width: 25rem;
-  border-radius: 10px;
-  position: relative;
-  transform: translate(-18rem, -30rem);
-  margin-bottom: -24em;
-}
-
-.ProfilePicture2 {
-  width: 25rem;
-  border-radius: 10px;
-  position: relative;
-  transform: translate(18rem);
+  transform: translate(2rem, 0);
 }
 
 /* ------------------------------------------laptop view------------------------------------------- */
 
 @media (max-width: 1000px) {
-  .welcomeText {
-    margin: 3%;
-  }
-
-  .aboutMeText {
-    width: 15rem;
-    transform: translate(0, -12rem);
-  }
-
-  .ProfilePicture1 {
-    width: 18rem;
-    transform: translate(-14rem, -24rem);
-  }
-
-  .ProfilePicture2 {
-    width: 18rem;
-    transform: translate(14rem);
-  }
 }
 
 /* -----------------------------------------tablet view---------------------------------- */

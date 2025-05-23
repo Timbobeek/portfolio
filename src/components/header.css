@@ -117,7 +117,7 @@ dialog:-internal-dialog-in-top-layer::backdrop {
 
 /*------------------fancy hover effect----------------*/
 
-#pillar {
+/* #pillar {
   margin-left: 130px;
   width: 100px;
   transform: translateX(-130px);
@@ -137,7 +137,6 @@ dialog:-internal-dialog-in-top-layer::backdrop {
   z-index: 2;
   color: black;
   font-size: large;
-  font-weight: bold;
   transform-style: preserve-3d;
   transform: rotateY(0deg);
   transition: all 3s cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -171,7 +170,7 @@ dialog:-internal-dialog-in-top-layer::backdrop {
   transform-origin: left center;
   transform-style: preserve-3d;
   backface-visibility: hidden;
-}
+} */
 
 /* ------------------------------------------laptop view------------------------------------------- */
 
@@ -188,9 +187,9 @@ dialog:-internal-dialog-in-top-layer::backdrop {
     width: 200px;
   }
 
-  .left {
+  /* .left {
     margin-bottom: 12px;
-  }
+  } */
 
   .right {
     margin-top: 16px;

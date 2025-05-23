@@ -36,8 +36,8 @@ const Header = () => {
         <div id="pillar">
           <div className="row">
             <div className="wrap">
-              <div className="left">Timofey Goloshchapov</div>
-              <div className="right">have fun pronouncing my name 😁😁😁😁</div>
+              <div className="left">Timofey <br/> Goloshchapov</div>
+              {/* <div className="right">have fun pronouncing my name 😁😁😁😁</div> */}
             </div>
           </div>
         </div>
@@ -54,7 +54,7 @@ const Header = () => {
           <Link to="contacts">Contacts</Link>
         </div>
         <div className="menuOption">
-          <Link to="hobbies">My Hobbies</Link>
+          <Link to="hobbies">Hobbies</Link>
         </div>
         <div className="menuOption">
           {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
@@ -82,7 +82,7 @@ const Header = () => {
           <a href="/">Home</a>
           <a href="/projects">Projects</a>
           <a href="/contacts">Contacts</a>
-          <a href="/hobbies">My Hobbies</a>
+          <a href="/hobbies">Hobbies</a>
         </div>
       </div>
     </header>

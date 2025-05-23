@@ -7,7 +7,7 @@ import linkedin from "../images/linkedin.png";
 const Footer = () => {
   return (
     <footer>
-      <div className="footer-left">
+
         <div className="git">
           <a
             href="https://github.com/Timbobeek"
@@ -26,22 +26,6 @@ const Footer = () => {
             <img src={linkedin} width="40" height="40" alt="logo" />
           </a>
         </div>
-      </div>
-
-      <div className="footer-right">
-        <div className="menuOption">
-          <Link to="/">Home</Link>
-        </div>
-        <div className="menuOption">
-          <Link to="projects">Projects</Link>
-        </div>
-        <div className="menuOption">
-          <Link to="contacts">Contacts</Link>
-        </div>
-        <div className="menuOption">
-          <Link to="hobbies">My Hobbies</Link>
-        </div>
-      </div>
     </footer>
   );
 };
