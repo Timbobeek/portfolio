@@ -67,22 +67,19 @@ html {
     margin: 4%;
   }
 
-  .aboutMeText {
-    width: 26rem;
-    padding: 20px;
-    font-size: 18px;
-    transform: translate(0rem, -2rem);
+  .bigTextHome{
+    font-size: 7em;
+    position:absolute;
+    color: white;
+    transform: translate(-5rem, 0);
   }
 
-  .ProfilePicture1 {
-    width: 20rem;
-    transform: translate(0rem, -4rem);
-    margin-bottom: 14%;
+  .bottomHalfLeft{
+    display: none;
   }
 
-  .ProfilePicture2 {
-    width: 20rem;
-    transform: translate(0rem, 0rem);
+  .bottomHalfRight{
+    transform: none;
   }
 }
 
@@ -91,22 +88,5 @@ html {
 @media (max-width: 480px) {
   .welcomeText {
     margin: 6%;
-  }
-
-  .aboutMeText {
-    width: 18rem;
-    font-size: 1rem;
-    top: 1rem;
-    transform: translate(0rem, -2rem);
-  }
-
-  .ProfilePicture1 {
-    width: 16rem;
-    transform: translate(0rem, -4rem);
-  }
-
-  .ProfilePicture2 {
-    width: 16rem;
-    transform: translate(0rem, 0rem);
   }
 }

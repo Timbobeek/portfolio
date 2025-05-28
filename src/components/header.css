@@ -9,6 +9,7 @@ header {
 
 .header-left {
   width: 400px;
+  font-size: large;
 }
 
 .menuOption {
@@ -31,12 +32,8 @@ header {
   color: inherit;
 }
 
-.header-right a:hover {
-  font-weight: bold;
-}
-
-.small-screen {
-  display: none;
+.menuOption:hover{
+  transform: scale(1.1);
 }
 
 .small-screen-menu {
@@ -117,60 +114,78 @@ dialog:-internal-dialog-in-top-layer::backdrop {
 
 /*------------------fancy hover effect----------------*/
 
-/* #pillar {
-  margin-left: 130px;
-  width: 100px;
-  transform: translateX(-130px);
-  perspective: 1900px;
-}
-
-.wrap {
-  display: flex;
-  transform: rotateY(0deg);
-  transition: all 1s cubic-bezier(0.25, 0.8, 0.25, 1);
-  transform-style: preserve-3d;
-}
-
-.row {
-  width: 400px;
+.left{
+  display: inline-block;
   position: relative;
-  z-index: 2;
-  color: black;
-  font-size: large;
-  transform-style: preserve-3d;
-  transform: rotateY(0deg);
-  transition: all 3s cubic-bezier(0.25, 0.8, 0.25, 1);
-}
-
-.row:hover .wrap {
-  transform: rotateY(-45deg);
-  cursor: pointer;
-}
-
-.row:hover {
-  z-index: 1;
-}
-
-.row:hover::before .left {
-  width: 55%;
-}
-
-.left {
-  width: 350px;
-  margin-top: 10px;
-  align-items: center;
-  transform-style: preserve-3d;
-  transform: rotateY(0deg);
-}
-
-.right {
-  width: 350px;
+  overflow: hidden;
+  text-decoration: none;
+  font-size: 1em;
+  outline: none;
+  background: transparent;
+  font-family: inherit;
   text-align: left;
-  transform: rotateY(90deg);
-  transform-origin: left center;
-  transform-style: preserve-3d;
-  backface-visibility: hidden;
-} */
+  border: none;
+}
+
+.left span {
+  -webkit-transition: 0.6s;
+  -moz-transition: 0.6s;
+  -o-transition: 0.6s;
+  transition: 0.6s;
+  -webkit-transition-delay: 0.2s;
+  -moz-transition-delay: 0.2s;
+  -o-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+.left:before,
+.left:after {
+    content: '';
+    position: absolute;
+    top: 0.1em;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    -webkit-transition: .4s,opacity .6s;
+    -moz-transition: .4s,opacity .6s;
+    -o-transition: .4s,opacity .6s;
+    transition: .4s,opacity .6s;
+}
+
+.left:before {
+  content: attr(data-hover);
+  -webkit-transform: translate(0,-150%);
+  -moz-transform: translate(0,-150%);
+  -ms-transform: translate(0,-150%);
+  -o-transform: translate(0,-150%);
+  transform: translate(0,-150%);
+}
+
+.left:hover span,
+.left:active span {
+    opacity: 0;
+    -webkit-transform: scale(0.3);
+    -moz-transform: scale(0.3);
+    -ms-transform: scale(0.3);
+    -o-transform: scale(0.3);
+    transform: scale(0.3);
+}
+
+.left:hover:before,
+.left:active:after {
+    opacity: 1;
+    -webkit-transform: translate(0,0);
+    -moz-transform: translate(0,0);
+    -ms-transform: translate(0,0);
+    -o-transform: translate(0,0);
+    transform: translate(0,0);
+    -webkit-transition-delay: .4s;
+    -moz-transition-delay: .4s;
+    -o-transition-delay: .4s;
+    transition-delay: .4s;
+}
+
 
 /* ------------------------------------------laptop view------------------------------------------- */
 
@@ -186,10 +201,6 @@ dialog:-internal-dialog-in-top-layer::backdrop {
   .row {
     width: 200px;
   }
-
-  /* .left {
-    margin-bottom: 12px;
-  } */
 
   .right {
     margin-top: 16px;
@@ -208,10 +219,8 @@ dialog:-internal-dialog-in-top-layer::backdrop {
   .header-left {
     font-size: large;
     width: 400px;
-  }
-
-  .left {
-    display: none;
+    text-align: center;
+    margin-bottom: 10px;
   }
 
   .row {
@@ -228,7 +237,6 @@ dialog:-internal-dialog-in-top-layer::backdrop {
     justify-content: center;
     align-content: center;
     margin-bottom: 10px;
-    font-weight: bold;
   }
 
   .row .right {
@@ -255,6 +263,10 @@ dialog:-internal-dialog-in-top-layer::backdrop {
     align-items: stretch;
   }
 
+  .left{
+    font-size: large;
+  }
+
   .small-screen-menu {
     display: flex;
     align-items: center;
@@ -263,7 +275,6 @@ dialog:-internal-dialog-in-top-layer::backdrop {
 
   .header-left {
     display: none;
-    width: 180px;
   }
 
   /* this is causing the modal to not display */
@@ -273,12 +284,6 @@ dialog:-internal-dialog-in-top-layer::backdrop {
 
   #hireMe:hover{
     font-weight: bold;
-  }
-
-  .title {
-    display: flex;
-    font-weight: bold;
-    font-size: large;
   }
 
   .burger {
