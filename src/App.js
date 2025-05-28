@@ -32,10 +32,12 @@ const App = () => {
         <div className="bottomHalf">
          <div className="bottomHalfLeft">This is my first website</div>
          <div className="bottomHalfRight">
-             My name is Timofey (I also go by Tim) and I am a Full Stack Developer with a degree in Psychology & Sociology and years of experience as a manager at a movie theatre.
-             What you see is my first self-made website - just a few years ago this was unimaginable. 
-             I have tried various professions, but software engineering is the first one where I enjoy the process, the result, and see my place in it.
-             If you like what you see, want to hire me or just chat about coding, hit me up on the socials listed below or my email!
+             My name is Timofey (I also go by Tim) and I am a Full Stack Developer with a degree in Psychology & Sociology and years of experience as a manager at a movie theatre. 
+             <br/><br/>
+             What you see is my first self-made website - just a couple years ago this was unimaginable. 
+             I have tried various professions, but software engineering is the first where I enjoy the process, appreciate the results, and see my place in it.
+             <br/><br/>
+             If you want to chat, hit me up on the socials listed below or <a className="emailLink" href="mailto:tim.goloschapov@gmail.com">my email</a>!
          </div>
         </div>
      </div>

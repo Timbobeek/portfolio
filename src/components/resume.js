@@ -12,7 +12,7 @@ const Resume = () => {
       "Currículum",
       "Резюме",
       "Resümee",
-      "Իմ ռեզյումեն",
+      // "Իմ ռեզյումեն",
     ]);
 
     return () => {
@@ -38,7 +38,7 @@ const Resume = () => {
         Resume
       </span>
       <a href="resume.pdf" download="Timofey Goloshchapov Resume">
-        <button>PRESS TO DOWNLOAD</button>
+        <button>DOWNLOAD RESUME</button>
       </a>
       <span id="contactMe" className="contactMe">
         Resume

@@ -20,7 +20,7 @@ const Hobbies = () => {
       "Mis hobbies",
       "Mої захоплення",
       "Meine Hobbies",
-      "Իմ հոբբիները",
+      // "Իմ հոբբիները",
     ]);
 
     return () => {

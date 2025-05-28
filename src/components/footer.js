@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./footer.css";
 import github from "../images/github.png";
-import linkedin from "../images/linkedin.png";
 import linkedinBlk from "../images/linkedinBlk.png"
 
 const Footer = () => {
@@ -23,7 +22,7 @@ const Footer = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <img src={linkedinBlk} width="50" height="50" alt="logo" />
+            <img src={linkedinBlk} width="48" height="48" alt="logo" />
           </a>
         </div>
     </footer>

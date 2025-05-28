@@ -10,7 +10,7 @@ const Projects = () => {
       "Proyectos",
       "Проекти",
       "Projekte",
-      "Իմ պրոյեկտները",
+      // "Իմ պրոյեկտները",
     ]);
 
     return () => {
@@ -23,25 +23,6 @@ const Projects = () => {
       <div className="container-title">
         <span id="projectsTitle" className="projectsTitle"></span>
       </div>
-
-      {/* <div className="container">
-        <div className="card" id="project1">
-          <div className="card__head">
-            <div className="p1">Data Persistence Project</div>
-            <div className="p3">
-              One of the toughest Backend assignments I have worked on at
-              BloomTech: involves SQL, multi-table queries, data modeling.
-            </div>
-            <a
-              href="https://github.com/Timbobeek/web-sprint-challenge-adding-data-persistence"
-              className="p2"
-              target="_blank"
-              rel="noreferrer"
-            >
-              GitHub Repository
-            </a>
-          </div>
-        </div> */}
 
     <div className="container">
         <div className="card" id="project1">
@@ -82,79 +63,61 @@ const Projects = () => {
 
         <div className="card" id="project3">
           <div className="card__head">
-            <div className="p1">Mock Marketplace Website</div>
+            <div className="p1">Local Business Website</div>
             <div className="p3">
-              I designed most of this Amazon/Ebay/Craigslist mock and was
-              responsible for the home and listings pages. Also done at
-              BloomTech, my first serious JavaScript group project!
-            </div>
-            <div className="projectLinks">
-              <a
-                href="https://github.com/african-marketplace-dec2021/frontend"
-                className="p2"
-                target="_blank"
-                rel="noreferrer"
-              >
-                GitHub
-              </a>
-              <a
-                href="https://frontend-nine-flame.vercel.app/"
-                className="p2"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Website 
-              </a>
+              My current job where I maintain and enhance a labor analysis app for a local firm <a className="betonLink" target="_blank"
+                rel="noreferrer" href="https://aaconcreteinc.com/">All American Concrete Inc. </a>
+              In over a year, I’ve made significant progress as a software engineer while working on this project.
+              I’ve improved the labor data analysis mechanisms, built responsive pages, worked within an Electron app, resolved backend issues, and much more.
+              Unfortunately, I can’t share links to the repository or the product due to privacy constraints, but feel free to ask me about it!
             </div>
           </div>
         </div>
 
         <div className="card" id="project4">
           <div className="card__head">
-            <div className="p1">Mock Recipe Website</div>
+            <div className="p1">FutbolSurvey</div>
             <div className="p3">
-              A JavaScript web page made for saving recipes online, where I worked on (you
-              guessed it!) the component responsible for saving recipes on the
-              site.
+              A page dedicated to football (soccer) enthusiasts.  This project features Auth0 for authentication and has helped me improve my backend skills.
+              The current version is built with JavaScript and CSS, while the newer WIP version uses TypeScript, TailwindCSS, and shadcn.
+              Working on this project allows me to explore new technologies in a setting I enjoy - football.
             </div>
             <div className="projectLinks">
               <a
-                href="https://github.com/Build-Week-Secret-Family-Recipes-01/front-end"
+                href="https://github.com/Timbobeek/FutbolSurvey"
                 className="p2"
                 target="_blank"
                 rel="noreferrer"
               >
-                GitHub
+                v1GitHub
               </a>
               <a
-                href="https://recipesfr.vercel.app/"
+                href="https://futbolsurvey.com/"
                 className="p2"
                 target="_blank"
                 rel="noreferrer"
               >
-                Website 
+                v1Website 
+              </a>
+              <a
+                href="https://github.com/Timbobeek/ultrafreshproject"
+                className="p2"
+                target="_blank"
+                rel="noreferrer"
+              >
+                v2GitHub
+              </a>
+              <a
+                href="https://futbol-survey-ultra.vercel.app/"
+                className="p2"
+                target="_blank"
+                rel="noreferrer"
+              >
+                v2Demo 
               </a>
             </div>
           </div>
         </div>
-
-        {/* <div className="card" id="project5">
-          <div className="card__head">
-            <div className="p1">A Registration Page</div>
-            <div className="p3">
-              As a part of BloomTech bootcamp program, I made the UX/Frontend of
-              one of the registration pages for a children's coding school.
-            </div>
-            <a
-              href="https://github.com/BloomTech-Labs/coder-heroes-fe/pull/234"
-              className="p2"
-              target="_blank"
-              rel="noreferrer"
-            >
-              GitHub Repository
-            </a>
-          </div>
-        </div> */}
 
         <div className="card" id="project5">
           <div className="card__head">
