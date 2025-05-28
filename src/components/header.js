@@ -32,15 +32,7 @@ const Header = () => {
   return (
     <header>
       <div className="header-left">
-        <div className="small-screen">Timofey Goloshchapov</div>
-        <div id="pillar">
-          <div className="row">
-            <div className="wrap">
-              <div className="left">Timofey Goloshchapov</div>
-              <div className="right">have fun pronouncing my name 😁😁😁😁</div>
-            </div>
-          </div>
-        </div>
+        <button className="left" type="button" data-hover="Stress on 'e' and 'a'"><span>Timofey Goloshchapov</span></button>
       </div>
 
       <div className="header-right">
@@ -54,7 +46,7 @@ const Header = () => {
           <Link to="contacts">Contacts</Link>
         </div>
         <div className="menuOption">
-          <Link to="hobbies">My Hobbies</Link>
+          <Link to="hobbies">Hobbies</Link>
         </div>
         <div className="menuOption">
           {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
@@ -63,7 +55,6 @@ const Header = () => {
       </div>
 
       <dialog id="modal" className="modal" onClose={() => setShowDialog(false)}>
-          {/* <button id="closeModal" onClick={() => setShowDialog(false)} className="modal-close-btn"/> */}
           {/* eslint-disable-next-line jsx-a11y/anchor-is-valid, jsx-a11y/anchor-has-content */}
           <a id="closeModal" href="#" onClick={() => setShowDialog(false)} />
           <img className="flyer" src={flyer} alt="flyer"/>
@@ -71,18 +62,23 @@ const Header = () => {
       
 
       <div className="small-screen-menu">
-        <div className="title">Timofey Goloshchapov</div>
-        <a href="#" id='hireMe' onClick={() => setShowDialog(true)}>Hire Me?</a>
+        <button className="left" type="button" data-hover="Stress on 'e' and 'a'"><span>Timofey Goloshchapov</span></button>
+
+        <a href="#" id='hireMe' onClick={() => setShowDialog(true)}>
+          <i className="fa fa-clipboard-question fa-lg"></i> 
+        </a>
+
         <div className="burger">
           <a href="#" className="icon" onClick={myFunction}>
-            <i className="fa fa-bars fa-lg"></i>
+            <i className="fa fa-burger fa-lg"></i> 
           </a>
         </div>
+
         <div id="myLinks">
           <a href="/">Home</a>
           <a href="/projects">Projects</a>
           <a href="/contacts">Contacts</a>
-          <a href="/hobbies">My Hobbies</a>
+          <a href="/hobbies">Hobbies</a>
         </div>
       </div>
     </header>

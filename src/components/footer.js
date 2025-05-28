@@ -2,12 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./footer.css";
 import github from "../images/github.png";
-import linkedin from "../images/linkedin.png";
+import linkedinBlk from "../images/linkedinBlk.png"
 
 const Footer = () => {
   return (
     <footer>
-      <div className="footer-left">
         <div className="git">
           <a
             href="https://github.com/Timbobeek"
@@ -23,25 +22,9 @@ const Footer = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <img src={linkedin} width="40" height="40" alt="logo" />
+            <img src={linkedinBlk} width="48" height="48" alt="logo" />
           </a>
         </div>
-      </div>
-
-      <div className="footer-right">
-        <div className="menuOption">
-          <Link to="/">Home</Link>
-        </div>
-        <div className="menuOption">
-          <Link to="projects">Projects</Link>
-        </div>
-        <div className="menuOption">
-          <Link to="contacts">Contacts</Link>
-        </div>
-        <div className="menuOption">
-          <Link to="hobbies">My Hobbies</Link>
-        </div>
-      </div>
     </footer>
   );
 };

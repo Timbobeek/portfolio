@@ -9,7 +9,9 @@
 .resumeDiv button {
   color: black;
   background-color: #eddfb3;
-  padding: 20%;
+  font: inherit;
+  font-size: .5em;
+  padding: 20px;
 }
 
 .resumeDiv button:hover {
