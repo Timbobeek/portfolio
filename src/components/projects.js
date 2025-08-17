@@ -78,18 +78,18 @@ const Projects = () => {
           <div className="card__head">
             <div className="p1">FutbolSurvey</div>
             <div className="p3">
-              A page dedicated to football (soccer) enthusiasts.  This project features Auth0 for authentication and has helped me improve my backend skills.
-              The current version is built with JavaScript and CSS, while the newer WIP version uses TypeScript, TailwindCSS, and shadcn.
+              A page dedicated to football (soccer) enthusiasts.  This project features Clerk for authentication and has helped me improve my backend skills.
+              The current version is built with TypeScript, Next.js, TailwindCSS, and shadcn.
               Working on this project allows me to explore new technologies in a setting I enjoy - football.
             </div>
             <div className="projectLinks">
               <a
-                href="https://github.com/Timbobeek/FutbolSurvey"
+                href="https://github.com/Timbobeek/ultrafreshproject"
                 className="p2"
                 target="_blank"
                 rel="noreferrer"
               >
-                v1GitHub
+                GitHub
               </a>
               <a
                 href="https://futbolsurvey.com/"
@@ -97,23 +97,7 @@ const Projects = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                v1Website 
-              </a>
-              <a
-                href="https://github.com/Timbobeek/ultrafreshproject"
-                className="p2"
-                target="_blank"
-                rel="noreferrer"
-              >
-                v2GitHub
-              </a>
-              <a
-                href="https://futbol-survey-ultra.vercel.app/"
-                className="p2"
-                target="_blank"
-                rel="noreferrer"
-              >
-                v2Demo 
+                Website 
               </a>
             </div>
           </div>
